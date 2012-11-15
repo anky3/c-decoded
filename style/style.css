@@ -85,6 +85,7 @@ hr.ft{
 .footer p{
 	font-family:'Myriad pro', sans-serif;
 	color:#000;
+	
 	font-size:14px;
 	text-align:right;
 	padding:4px 12px 4px;
@@ -118,7 +119,7 @@ p.tl{
 	border-bottom:double #fff;
 	}
 p.para{
-	margin:24px 0 0;
+	margin:24px 0 20px;
 	padding:0 8px 0;
 	width:100%;
 	font-family: 'Amaranth-webfont', sans-serif;
