@@ -9,18 +9,18 @@
 	display:none;
 	text-decoration:none;
 	position:fixed;
-	bottom:10px;
-	right:10px;
+	bottom:80px;
+	right:20px;
 	overflow:hidden;
 	width:51px;
 	height:51px;
 	border:none;
 	text-indent:100%;
-	background:url(http://anky3.github.com/c-decoded/script/img/ui.totop.png) no-repeat left top;
+	background:url(http://anky3.github.com/c-decoded/img/ui.totop.png) no-repeat left top;
 }
 
 #toTopHover {
-	background:url(http://anky3.github.com/c-decoded/script/img/ui.totop.png) no-repeat left -51px;
+	background:url(http://anky3.github.com/c-decoded/img/ui.totop.png) no-repeat left -51px;
 	width:51px;
 	height:51px;
 	display:block;
