@@ -4,35 +4,41 @@
 <title>C&nbsp;Decoded!&nbsp;-&nbsp;Page&nbsp;2</title>
 <script type="text/javascript" src="http://anky3.github.com/c-decoded/script/jquery.min.js"></script>
 <script src="http://anky3.github.com/c-decoded/script/gooeymenu.js"></script>
-<script src="http://anky3.github.com/c-decoded/script/scrolltotop.js"></script>
 <link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/style.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/gooeymenu.css" />
-<style>
+<script>
+$(function () {
 
-</style>
-<script type="text/javascript">
-    $(document).ready(function(){
- 
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
+    /* set variables locally for increased performance */
+    var scroll_timer;
+    var displayed = false;
+    var $message = $('#message a');
+    var $window = $(window);
+    var top = $(document.body).children(0).position().top;
+
+    /* react to scroll event on window */
+    $window.scroll(function () {
+        window.clearTimeout(scroll_timer);
+        scroll_timer = window.setTimeout(function () {
+            if($window.scrollTop() <= top)
+            {
+                displayed = false;
+                $message.fadeOut(500);
             }
-        });
- 
-        $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
- 
+            else if(displayed == false)
+            {
+                displayed = true;
+                $message.stop(true, true).show().click(function () { $message.fadeOut(500); });
+            }
+        }, 100);
     });
+});
 </script>
 </head>
 <body>
 <center>
 <div class="main">
-	<div class="b-top"></div>
+	<div id="top" class="b-top"></div>
 	<div class="head">
 	<a href="http://anky3.github.com/c-decoded/"><h1 class="head-logo"><span style="font-size:68px;">C</span>&nbsp;decoded!</h1></a>
 	</div>
@@ -152,8 +158,8 @@
 		<li><a href="http://anky3.github.com/c-decoded/page/3.html">3</a></li>
 		<li><a href="http://anky3.github.com/c-decoded/page/3.html"><span class="lsf">right</span></a></li>
 	</ul>
-	<a href="#" class="scrollup">Scroll</a>
 	</div>
+<div id="message"><a href="top">Scroll to top</a></div>
 	<hr class="ft" />
 	<div class="footer">
 	<p>Designed and maintained by A Creativity<br />&copy; 2012</p>
