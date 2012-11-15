@@ -33,6 +33,8 @@
 }
 span.cd{
 	font-family:monospace;
+	color:rgb(0,0,160);
+	font-weight:bold;
 	}
 .lsf {
   font-family: 'LigatureSymbols';
