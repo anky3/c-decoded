@@ -1,0 +1,264 @@
+@font-face{ font-family: 'akashi';
+	src:url('font/akashi-webfont.eot');
+	src:url('font/akashi-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/akashi-webfont.woff') format('woff'),
+		url('font/akashi-webfont.ttf') format('truetype'),
+		url('font/akashi-webfont.svg#webfont') format('svg');
+	}
+@font-face{ font-family: 'AftaSansThin-Regular';
+	src:url('font/AftaSansThin-Regular-webfont.eot');
+	src:url('font/AftaSansThin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/AftaSansThin-Regular-webfont.woff') format('woff'),
+		url('font/AftaSansThin-Regular-webfont.ttf') format('truetype'),
+		url('font/AftaSansThin-Regular-webfont.svg#webfont') format('svg');
+	}
+@font-face{ font-family: 'Amaranth-webfont';
+	src:url('font/Amaranth-webfont.eot');
+	src:url('font/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/Amaranth-webfont.woff') format('woff'),
+		url('font/Amaranth-webfont.ttf') format('truetype'),
+		url('font/Amaranth-webfont.svg#webfont') format('svg');
+	}
+/*for FireFox*/
+    input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner
+    {   
+        border : 0px;
+    } 
+body{
+	margin:0;
+	padding:0;  background: #212121;
+  background: -moz-linear-gradient(top, #373737, #212121);
+  background: -webkit-linear-gradient(top, #373737, #212121);
+  background: -ms-linear-gradient(top, #373737, #212121);
+  background: -o-linear-gradient(top, #373737, #212121);
+  background: linear-gradient(top, #373737, #212121);
+	}
+.b-top{
+	margin:0;
+	background-color:#fff;
+	width:100%;
+	height:2px;
+	}
+.main{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	background:white url(image/noise.png);
+	overflow:hidden;
+	}
+.head{
+	margin:0;
+	padding:0;
+	background:#E70073;
+	height:100px;
+	text-align:left;
+	width:100%;
+	}
+.menu{
+	height:38px;
+	padding-bottom:20px;
+	padding-top:5px;
+	}
+.h-top{
+	margin:0;
+	background-color:#56E700;
+	width:100%;
+	height:4px;
+	}
+.content{
+	width:68%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	padding-top:20px;
+	}
+hr.ft{
+	width:98%;
+	color:#E9E1FF;
+	padding:0;
+	margin:8px 0 8px;
+	}
+.footer{
+	width:30%;
+	margin-left:auto;	
+	}
+.footer p{
+	font-family:'Myriad pro', sans-serif;
+	color:#000;
+	font-size:14px;
+	text-align:right;
+	padding:4px 12px 4px;
+	margin:0;
+	}
+.tab{
+	margin:0 32px 0; 
+	}
+h1.head-logo{
+	position:absolute;
+	margin:20px 32px 0px;
+	padding:0;
+	font-weight:bold;
+	font-family: 'akashi', sans-serif;
+	font-size:48px;
+	color:white;
+	text-shadow: 1px 1px #d5d2d2;
+	}
+p.tl{
+	margin:24px 0 0;
+	font-weight:900;
+	padding:4px 12px 4px;
+	width:100%;
+	text-align:left;
+	font-family: 'AftaSansThin-Regular', sans-serif;
+	font-size:16px;
+	color:#444444;
+	background:#BABABA;
+	border-color:#fff;
+	border-top:double #fff;
+	border-bottom:double #fff;
+	}
+p.para{
+	margin:24px 0 0;
+	padding:0 8px 0;
+	width:100%;
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	text-align:left;
+	color:#444444;
+	}
+p.para-code{
+	margin:24px 18px 30px;
+	padding:0 18px 0;
+	background:#FFF6F6;
+	width:90%;
+	white-space: nowrap;
+	overflow-x:auto;
+	border-left: 4px solid #648BFF;
+	font-family: 'monospace', sans-serif;
+	font-size:16px;
+	text-align:left;
+	color:#444444;
+	}
+ol.num{
+	padding:0;
+	padding-left:60px;
+	text-align:left;
+	width:100%;
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	color:#444444;
+	}
+ol.num li{
+	padding-bottom:4px;
+	}
+ul.circle{
+	padding:0;
+	padding-left:60px;
+	text-align:left;
+	width:100%;
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	list-style-type:disc;
+	color:#444444;
+	}
+ul.circle li{
+	padding-bottom:4px;
+	}
+ul.square{
+	padding:0;
+	margin:0;
+	list-style-type:square;
+	margin-left:120px;
+	text-align:left;
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	color:#444444;
+	}
+ul.square li{
+	padding-bottom:4px;
+	}
+
+.table1 table, .table1 th, .table1 td{
+	border:2px solid #8AD0E7;
+	border-collapse:collapse;
+	}
+.table1 table{
+	align:center;
+	margin:0 40px 0;
+	padding:0;
+	}
+table{
+	align:center;
+	margin:0 40px 0;
+	padding:0;
+	border-collapse:collapse;
+	}
+.table1 th {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 0 5px;
+	background:#E1F7FF
+	}
+.table1 th, .table1 td{
+	width:180px;
+	text-align:center;
+	}
+.table1 td{
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	color:#444444;
+	}
+.table2{
+	margin:15px 40px 0;
+	}
+.table2 td{
+	width:220px;
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	text-align:left;
+	color:#444444;
+	}
+
+.table3 th {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 0 5px;
+	background:#E1F7FF
+	}
+.table3 th, .table3 td{
+	width:200px;
+	text-align:center;
+	}
+.table3 td{
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	padding:4px 2px 2px;
+	color:#444444;
+	}
+p.indent{
+	padding:0;
+	margin:0;
+	margin-left:48px;
+	}
+.search{
+padding:0;
+	position:absolute;
+	margin: -45px 650px 0;
+	height:34px;
+	overflow:hidden;
+	}
+.doc{
+	color:rgb(0,160,0);
+	}
+.sc{
+	color:rgb(255,0,0);
+	}
+.kw{
+	color:rgb(0,0,160);
+	font-weight:bold;
+	}
+.str{
+	color:rgb(0,0,255);
+	}
