@@ -38,6 +38,7 @@ span.cd{
   font-family: 'LigatureSymbols';
     font-weight: normal;
     font-style: normal;
+  font-size:20px;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
   -ms-text-rendering: optimizeLegibility;
@@ -53,7 +54,6 @@ span.cd{
 .lsf-icon:before {
   content:attr(title);
   margin-right:0.8em;
-  font-size:32px;
   font-family: 'LigatureSymbols';
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
