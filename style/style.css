@@ -72,6 +72,40 @@ body{
 	padding-bottom:50px;
 	padding-top:20px;
 	}
+div.pagination{
+	width:25%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	}
+ul.pagination, ul.pagination a{
+	padding:0;
+	margin:0;
+	list-style: none;
+	position:relative;
+	color:black;
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:20px;
+	background:#50C1E7;
+	border-radius: 10px 30px / 15px 25px;	
+	text-align:center;
+	}
+ul.pagination li{
+	display: inline;
+	margin-right:10px;
+	margin-left:10px;
+}
+ul.pagination li a, ul.pagination li a:hover, ul.pagination li a:active, ul.pagination li a:visited{
+	text-decoration:none;
+}
+li.present{
+	background:#0054A8;
+	color:white;
+	padding:0 6px 0;
+	}
+li.hide{
+	visibility:hidden;
+	}
 hr.ft{
 	width:98%;
 	color:#E9E1FF;
