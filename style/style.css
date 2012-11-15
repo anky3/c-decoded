@@ -131,6 +131,7 @@ ul.pagination, ul.pagination a{
 	list-style: none;
 	position:relative;
 	color:black;
+	white-space:nowrap;
 	font-family: 'Amaranth-webfont', sans-serif;
 	font-size:20px;
 	background:#50C1E7;
