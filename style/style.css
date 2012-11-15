@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 @font-face{ font-family: 'akashi';
 	src:url('font/akashi-webfont.eot');
 	src:url('font/akashi-webfont.eot?#iefix') format('embedded-opentype'),
@@ -19,6 +20,50 @@
 		url('font/Amaranth-webfont.ttf') format('truetype'),
 		url('font/Amaranth-webfont.svg#webfont') format('svg');
 	}
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('font/LigatureSymbols-2.08.eot');
+    src: url('font/LigatureSymbols-2.08.eot?#iefix') format('embedded-opentype'),
+         url('font/LigatureSymbols-2.08.woff') format('woff'),
+         url('font/LigatureSymbols-2.08.ttf') format('truetype'),
+         url('font/LigatureSymbols-2.08.svg#LigatureSymbols') format('svg');
+    src: url('font/LigatureSymbols-2.08.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lsf {
+  font-family: 'LigatureSymbols';
+    font-weight: normal;
+    font-style: normal;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.lsf-icon:before {
+  content:attr(title);
+  margin-right:0.8em;
+  font-size:32px;
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
 /*for FireFox*/
     input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner
     {   
@@ -43,7 +88,7 @@ body{
 	width:95%;
 	margin-left:auto;
 	margin-right:auto;
-	background:white url(image/noise.png);
+	background:white url(http://anky3.github.com/c-decoded/img/noise.png);
 	overflow:hidden;
 	}
 .head{
