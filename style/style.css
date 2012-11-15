@@ -31,7 +31,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+span.cd{
+	font-family:monospace;
+	}
 .lsf {
   font-family: 'LigatureSymbols';
     font-weight: normal;
