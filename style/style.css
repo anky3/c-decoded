@@ -172,7 +172,7 @@ ul.pagination, ul.pagination a{
 	position:relative;
 	color:black;
 	white-space:nowrap;
-	font-family: 'Amaranth-webfont', sans-serif;
+	font-family: 'Arial', sans-serif;
 	font-size:20px;
 	background:#50C1E7;
 	border-radius: 10px 30px / 15px 25px;	
@@ -266,14 +266,24 @@ p.para{
 	}
 ol.num{
 	padding:0;
-	padding-left:60px;
+	margin:0 60px 0;
 	text-align:left;
-	width:100%;
 	font-family: 'Amaranth-webfont', sans-serif;
 	font-size:16px;
 	color:#444444;
 	}
 ol.num li{
+	padding-bottom:4px;
+	}
+ol.num2{
+	padding:0;
+	margin:0 60px 0;
+	text-align:left;
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	color:#444444;
+	}
+ol.num2 li{
 	padding-bottom:4px;
 	}
 ul.circle{
