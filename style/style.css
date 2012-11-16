@@ -384,3 +384,6 @@ padding:0;
 .str{
 	color:rgb(0,0,255);
 	}
+.keyword {
+	color: #006699 !important;
+ }
