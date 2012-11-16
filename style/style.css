@@ -152,7 +152,7 @@ body{
 	height:4px;
 	}
 .content{
-	width:68%;
+	width:70%;
 	margin-left:auto;
 	margin-right:auto;
 	padding-bottom:50px;
@@ -229,7 +229,6 @@ p.tl{
 	margin:24px 0 0;
 	font-weight:900;
 	padding:4px 12px 4px;
-	width:100%;
 	text-align:left;
 	font-family: 'AftaSansThin-Regular', sans-serif;
 	font-size:16px;
@@ -248,18 +247,11 @@ p.para{
 	text-align:left;
 	color:#444444;
 	}
-p.para-code{
-	margin:8px 0 0;
+.para-code{
+	margin:36px 0 50px;
 	padding:0;
-	background:#FFF6F6;
 	width:90%;
-	white-space: nowrap;
-	overflow-x:auto;
-	border-left: 4px solid #648BFF;
-	font-family: 'monospace', sans-serif;
-	font-size:16px;
 	text-align:left;
-	color:#444444;
 	}
 ol.num{
 	padding:0;
