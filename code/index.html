@@ -44,164 +44,50 @@
 			Simple Program to Find Sum of a and b
 		</p>
 		<p class="para-code">
-		<code>
-			<span class="doc">&#35;include&#60;stdio.h&#62;</span><br />
-			<span class="doc">&#35;include&#60;conio.h&#62;</span><br />
-			<span class="kw">void</span>&nbsp;main&#40;&#41;
-			<span class="sc">&#123;</span><br />
-			<span class="kw">int</span>&nbsp;a<span class="sc">,</span>b<span class="sc">,</span>c<span class="sc">&#59;</span><br />
-			clrscr<span class="sc">&#40;&#41;&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"Enter value of a: "</span><span class="sc">&#41;&#59;</span><br />
-			scanf<span class="sc">&#40;</span><span class="str">"%d"</span><span class="sc">,</span> <span class="sc">&amp;</span>a<span class="sc">&#41;&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"Enter value of b: "</span><span class="sc">&#41;;</span><br />
-			scanf<span class="sc">&#40;</span><span class="str">"%d"</span><span class="sc">,</span> <span class="sc">&amp;</span>b<span class="sc">&#41;&#59;</span><br />
-			c<span class="sc">=</span>a<span class="sc">+</span>b<span class="sc">&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">" %d\n+%d\n-----\n %d"</span><span class="sc">,</span> a<span class="sc">,</span> b<span class="sc">,</span> c<span class="sc">&#41;&#59;</span><br />
-			getch<span class="sc">&#40;&#41;&#59;</span><br />
-			<span class="sc">&#125;</span>
-		</code>
+		<pre class='brush: c'>
+			#include&lt;stdio.h>
+			#include&lt;conio.h>
+			void main()
+			{
+				int a,b,c;
+				clrscr();
+				printf("Enter value of a: ");
+				scanf("%d", &a);
+				printf("Enter value of b: ");
+				scanf("%d", &b);
+				c=a+b;
+				printf(" %d\n+%d\n-----\n %d", a, b, c);
+				getch();
+			} 
+		</pre>
 		</p>
 		<p class="tl">
 			Sum, Difference, Product & Division of a and b
 		</p>
 		<p class="para-code">
-		<code>
-			<span class="doc">&#35;include&#60;stdio.h&#62;</span><br />
-			<span class="doc">&#35;include&#60;conio.h&#62;</span><br />
-			<span class="kw">void</span>&nbsp;main&#40;&#41;
-			<span class="sc">&#123;</span><br />
-			<span class="kw">int</span>&nbsp;a<span class="sc">,</span>b<span class="sc">,</span>c<span class="sc">&#59;</span><br />
-			clrscr<span class="sc">&#40;&#41;&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"Enter value of a: "</span><span class="sc">&#41;&#59;</span><br />
-			scanf<span class="sc">&#40;</span><span class="str">"%d"</span><span class="sc">, &amp;</span>a<span class="sc">&#41;&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"Enter value of b: "</span><span class="sc">&#41;;</span><br />
-			scanf<span class="sc">&#40;</span><span class="str">"%d"</span><span class="sc">, &amp;</span>b<span class="sc">&#41;&#59;</span><br />
-			c<span class="sc">=</span>a<span class="sc">+</span>b<span class="sc">&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"\nSum = %d"</span><span class="sc">,</span> a<span class="sc">,</span> b<span class="sc">,</span> c<span class="sc">&#41;&#59;</span><br />
-			c<span class="sc">=</span>a<span class="sc">-</span>b<span class="sc">&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"\nDifference = %d"</span><span class="sc">,</span> a<span class="sc">,</span> b<span class="sc">,</span> c<span class="sc">&#41;&#59;</span><br />
-			c<span class="sc">=</span>a<span class="sc">*</span>b<span class="sc">&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"\nProduct = %d"</span><span class="sc">,</span> a<span class="sc">,</span> b<span class="sc">,</span> c<span class="sc">&#41;&#59;</span><br />
-			c<span class="sc">=</span>a<span class="sc">/</span>b<span class="sc">&#59;</span><br />
-			printf<span class="sc">&#40;</span><span class="str">"\nQuotent = %d"</span><span class="sc">,</span> a<span class="sc">,</span> b<span class="sc">,</span> c<span class="sc">&#41;&#59;</span><br />
-			getch<span class="sc">&#40;&#41;&#59;</span><br />
-			<span class="sc">&#125;</span>
-		</code>
+		<pre class='brush: c'>
+			#include&lt;stdio.h>
+			#include&lt;conio.h>
+			void main()
+			{
+				int a,b,c;
+				clrscr();
+				printf("Enter value of a: ");
+				scanf("%d", &a);
+				printf("Enter value of b: ");
+				scanf("%d", &b);
+				c=a+b;
+				printf("\nSum = %d", a, b, c);
+				c=a-b;
+				printf("\nDifference = %d", a, b, c);
+				c=a*b;
+				printf("\nProduct = %d", a, b, c);
+				c=a/b;
+				printf("\nQuotent = %d", a, b, c);
+				getch();
+			} 
+		</pre>
 		</p>
-		<pre class='brush: cpp'>
-      /* $Id: main.cpp,v 1.1 2004/01/25 22:57:25 zongo Exp $
-      **
-      ** Ark - Libraries, Tools &amp; Programs for MORPG developpements.
-      ** Copyright (C) 1999-2004 The Contributors of the Ark Project
-      ** Please see the file "AUTHORS" for a list of contributors
-      **
-      ** This program is free software; you can redistribute it and/or modify
-      ** it under the terms of the GNU General Public License as published by
-      ** the Free Software Foundation; either version 2 of the License, or
-      ** (at your option) any later version.
-      **
-      ** This program is distributed in the hope that it will be useful,
-      ** but WITHOUT ANY WARRANTY; without even the implied warranty of
-      ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-      ** GNU General Public License for more details.
-      **
-      ** You should have received a copy of the GNU General Public License
-      ** along with this program; if not, write to the Free Software
-      ** Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-      */
-      
-      
-      #include &lt;iostream>
-      #include &lt;sstream>
-      
-      #include &lt;string>
-      
-      #include "xmlRead.h"
-      #include "ogreGeometryReader.h"
-      #include "ogreMeshReader.h"
-      
-      
-      /****************************************************************************/
-      
-      class OgreSkeletonReader
-      {
-      	std::ostream&amp; errors;
-      
-      public:
-      	OgreSkeletonReader(std::ostream&amp; e) : errors(e) {}
-      	void parse(XmlNode&amp; root)
-      	{
-      	}
-      
-      	bool write(std::ostream&amp; os)
-      	{
-      		return true;
-      	}
-      };
-      
-      /****************************************************************************/
-      void parseStory (XmlNode&amp; node) 
-      {
-      	for (XmlNode cur=node.firstChild() ; cur ; cur=cur.nextSibling()) 
-      	{
-      	    if (cur.isName("keyword")) 
-      		{
-      			std::string key = cur.getString();
-      			std::cout &lt;&lt; "keyword: " &lt;&lt; key &lt;&lt; std::endl;
-       	    }
-      	}
-      }
-      
-      void parseDocument(const char *filename) 
-      {
-      	XmlDocument doc(filename);
-      	
-      	if (!doc) 
-      	{
-      		std::cerr &lt;&lt; "Document not parsed successfully." &lt;&lt; std::endl;
-      		return;
-      	}
-      	
-      	XmlNode root(doc);
-      	if (!root) 
-      	{
-      		std::cerr &lt;&lt; "Empty document." &lt;&lt; std::endl;
-      		return;
-      	}
-      	
-      	if (root.isName("mesh")) 
-      	{
-      		MeshParameters defaults;
-      		OgreMeshReader mesh(std::cerr, defaults);
-      		mesh.parseMesh(root);
-      		mesh.write(std::cout);
-      	}
-      	else if (root.isName("skeleton")) 
-      	{
-      		OgreSkeletonReader skel(std::cerr);
-      		skel.parse(root);
-      		skel.write(std::cout);
-      	}
-      	else
-      	{
-      		std::cerr &lt;&lt; "Unsupported XML file." &lt;&lt; std::endl;
-      	}
-      }
-      
-      int main(int argc, char **argv) 
-      {
-      	if (argc &lt;= 1) 
-      	{
-      		std::cerr &lt;&lt; "Usage: " &lt;&lt; argv[0] &lt;&lt; " file.xml" &lt;&lt; std::endl;
-      		return -1;
-      	}
-      
-      	const char* filename = argv[1];
-      	parseDocument(filename);
-      
-      	return 0;
-      }
-      </pre>
 	</div>
 	<div class="pagination">
 	<ul class="pagination">
@@ -234,18 +120,13 @@
 				easingType: 'linear' 
 	 		};
 			*/
-			
 			$().UItoTop({ easingType: 'easeOutQuart' });
-			
 		});
 	</script>
 	<script type='text/javascript'>
-SyntaxHighlighter.autoloader(
-	'cpp c	http://gazpo.com/wp-content/plugins/auto-syntaxhighlighter/SyntaxHighlighter/build/scripts/shBrushCpp-min.js'
-);
-SyntaxHighlighter.defaults['auto-links'] = false;
-SyntaxHighlighter.defaults['toolbar'] = false;
-SyntaxHighlighter.all();
-</script>
+		SyntaxHighlighter.defaults['auto-links'] = false;
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.all();
+	</script>
 </body>
 </html>
