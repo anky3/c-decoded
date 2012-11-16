@@ -247,6 +247,13 @@ p.para{
 	text-align:left;
 	color:#444444;
 	}
+.tip a, .tip a:active, .tip a:focus, .tip a:visited, .tip a:link{
+	text-decoration:underline;
+	}
+.tip a:hover{
+	text-decoration:underline;
+	color:black;
+	}
 .place-h{
 	margin:0px 23.5% 0;
 	padding:0;
