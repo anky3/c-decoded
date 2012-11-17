@@ -8,6 +8,10 @@
 <link rel="stylesheet" media="screen,projection" href="http://anky3.github.com/c-decoded/style/ui.totop.css" />
 <link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/style.css" type="text/css" charset="utf-8" />
 	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/shThemeDefault.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/shThemeDefault.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/shCore.css" type="text/css" charset="utf-8" />
+	<script src="http://anky3.github.com/c-decoded/script/shCore.js"></script>
+	<script src="http://anky3.github.com/c-decoded/script/shBrushCpp.js"></script>
 <link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/gooeymenu.css" />
 <style>
 
@@ -51,32 +55,32 @@
 		The primitive data types form the basic building block for defining an identifier. C language supports four primitive data types, namely, <a href="#int" class="tip">integer</a>, <a href="#dec" class="tip">real</a>, <a href="#ch" class="tip">character</a> and <a href="#void" class="tip">empty</a>.
 	</p>	
 	<br />
-	<p class="tl" id="#int">
+	<p class="tl" id="int">
 		Integer 
 	</p>
 	<p class="para">
-		Many numeric operations involve a positive or a negative integer number. To store integer numbers in an identifier, we need to define the integer of type <span class="keyword"><i>int</i></span>. In this case, int is a reserved word, which indicates that the identifier is capable of storing an integer data value.
+		Many numeric operations involve a positive or a negative integer number. To store integer numbers in an identifier, we need to define the integer of type <span class="keyword">int</span>. In this case, int is a reserved word, which indicates that the identifier is capable of storing an integer data value.
 	</p>	
 	<br />
-	<p class="tl" id="#dec">
+	<p class="tl" id="dec">
 		Real 
 	</p>
 	<p class="para">
-		Most of the financial and mathematical calculations require a real number in calculation. To use real values in C language, we need to use keyword <span class="keyword"><i>float</i></span> as the data type.
+		Most of the financial and mathematical calculations require a real number in calculation. To use real values in C language, we need to use keyword <span class="keyword">float</span> as the data type.
 	</p>	
 	<br />
-	<p class="tl" id="#ch">
+	<p class="tl" id="ch">
 		Character 
 	</p>
 	<p class="para">
-		To store Character data values, we have to use a keyword <span class="keyword"><i>char</i></span>. 
+		To store Character data values, we have to use a keyword <span class="keyword">char</span>. 
 	</p>	
 	<br />
-	<p class="tl" id="#void">
+	<p class="tl" id="void">
 		Empty Data Set 
 	</p>
 	<p class="para">
-		The last one of the primitive data types in C language is <span class="keyword"><i>void</i></span>. A <span class="keyword"><i>void</i></span> data type doesn’t associate an identifier with a specific type, such as integer or real. It associates identifier with an empty value. It is mainly used along with functions and pointers.
+		The last one of the primitive data types in C language is <span class="keyword">void</span>. A <span class="keyword">void</span> data type doesn’t associate an identifier with a specific type, such as integer or real. It associates identifier with an empty value. It is mainly used along with functions and pointers.
 	</p>	
 	<br />
 	<p class="tl">
@@ -138,6 +142,11 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			
 		});
+	</script>
+	<script type='text/javascript'>
+		SyntaxHighlighter.defaults['auto-links'] = false;
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.all();
 	</script>
 </body>
 </html>
