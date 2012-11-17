@@ -46,41 +46,60 @@
 	</p>
 	<p class="para">
 		<span class="tab"></span>The type of data value that can be stored in an identifier is known as its data type.
+		<p class="indent2">Data Types are categorized in two Types:<br /><br /></p>
+		<table class="table3">
+				<th>PRIMITIVE</th><th>DERIVED</th>
+			<tr>
+				<td><span class="keyword">int</span></td><td><span class="keyword">Pointer</span></td>
+			</tr>
+			<tr>
+				<td><span class="keyword">char</span></td><td><span class="keyword">Array</span></td>
+			</tr>
+			<tr>
+				<td><span class="keyword">float</span></td><td><span class="keyword">enum</span></td>
+			</tr>
+			<tr>
+				<td><span class="keyword">void</span></td><td><span class="keyword">struct</span></td>
+			</tr>
+			<tr>
+				<td></td><td><span class="keyword">union</span></td>
+			</tr>
+		</table>
 	</p>
 	<br />
 	<p class="tl">
-		Primitive
+		Primitive Data Type
 	</p>
 	<p class="para">
-		The primitive data types form the basic building block for defining an identifier. C language supports four primitive data types, namely, <a href="#int" class="tip">integer</a>, <a href="#dec" class="tip">real</a>, <a href="#ch" class="tip">character</a> and <a href="#void" class="tip">empty</a>.
+		<span class="tab"></span>The primitive data types form the basic building block for defining an identifier. C language supports four primitive data types, namely, <a href="#int" class="tip">integer</a>, <a href="#dec" class="tip">real</a>, <a href="#ch" class="tip">character</a> and <a href="#void" class="tip">empty</a>.
 	</p>	
 	<br />
 	<p class="tl" id="int">
 		Integer 
 	</p>
 	<p class="para">
-		Many numeric operations involve a positive or a negative integer number. To store integer numbers in an identifier, we need to define the integer of type <span class="keyword">int</span>. In this case, <span class="keyword">int</span> is a reserved word, which indicates that the identifier is capable of storing an integer data value.
+		<span class="tab"></span>Many numeric operations involve a positive or a negative integer number. To store integer numbers in an identifier, we need to define the integer of type <span class="keyword">int</span>. In this case, <span class="keyword">int</span> is a reserved word, which indicates that the identifier is capable of storing an integer data value.
 	</p>	
 	<br />
 	<p class="tl" id="dec">
 		Real 
 	</p>
 	<p class="para">
-		Most of the financial and mathematical calculations require a real number in calculation. To use real values in C language, we need to use keyword <span class="keyword">float</span> as the data type.
+		<span class="tab"></span>Most of the financial and mathematical calculations require a real number in calculation. To use real values in C language, we need to use keyword <span class="keyword">float</span> as the data type.
 	</p>	
 	<br />
 	<p class="tl" id="ch">
 		Character 
 	</p>
 	<p class="para">
-		To store Character data values, we have to use a keyword <span class="keyword">char</span>. 
+		<span class="tab"></span>To store Character data values, we have to use a keyword <span class="keyword">char</span>. 
 	</p>	
 	<br />
 	<p class="tl" id="void">
 		Empty Data Set 
 	</p>
 	<p class="para">
-		The last one of the primitive data types in C language is <span class="keyword">void</span>. A <span class="keyword">void</span> data type doesn’t associate an identifier with a specific type, such as integer or real. It associates identifier with an empty value. It is mainly used along with functions and pointers.
+		<span class="tab"></span>The last one of the primitive data types in C language is <span class="keyword">void</span>. A <span class="keyword">void</span> data type doesn’t associate an identifier with a specific type, such as integer or real. It associates identifier with an empty value. It is mainly used along with functions and pointers.
 	</p>	
 	<br />
 	<p class="tl">
@@ -89,15 +108,14 @@
 	<p class="para">
 		<span class="tab"></span>New data type created by the user from the existing data type is called user-defined Data type. Keyword <span class="keyword">typedef</span> is used to create a new data type.
 		<br /><br />
-		<span class="tab"></span>Syntax:
 	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
 		<div class="para-code">
 		<pre class='brush: c'>
 			typedef datatype identifier;
 		</pre>
 		</div>
-	<p class="para" style="margin-top:-20px;">
-		<span class="tab"></span>Example:
+	<p class="indent2"><b>Example</b>:
 	</p>
 		<div class="para-code">
 		<pre class='brush: c'>
@@ -105,6 +123,101 @@
 		</pre>
 		</div>
 	<br /> 
+	<p class="tl" id="void">
+		Derived Data Type
+	</p>
+	<p class="para">
+		<span class="tab"></span>Derived data types are helpful to simplify a complex program or for grouping of variables etc. <a href="#enum" class="tip">Enumerated</a>, Array, <a href="#pointer" class="tip">Pointer</a>, Structure, and Union are examples of the derived data types available in C language.
+	</p>	
+	<br />
+	<p class="tl" id="enum">
+		Enumerated Data Type 
+	</p>
+	<p class="para">
+		<span class="tab"></span>Enumerated data type can be created in C language by using keyword enum. They allow the programmer to associate a numeric constant with predefined names. 
+		<br /><br />
+	</p>
+	<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+			<pre class='brush: c'>
+				enum identifier {value 1, value 2, value 3, ..., value n};
+			</pre>
+		</div>	
+	<br />
+	<p class="tl" id="pointer">
+		Pointer 
+	</p>
+	<p class="para">
+		<span class="tab"></span>An identifier when defined is associated with three entities, namely, an address in memory, the size of memory to be allocated, and a value. As C language was designed to build system software, it provides inbuilt features using which a user can directly interact with the physical memory of the computer.
+		<br /><br />
+	</p>
+	<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+			<pre class='brush: c'>
+				data type *identifier name;
+			</pre>
+		</div>	
+	<br />
+	<p class="tl">
+		Memory Allocation of Data Types
+	</p>
+	<p class="para">
+		<table class="table1">
+				<th class="sr">Data Type</th>
+				<th>Memory Allocated</th>
+				<th>Description</th>
+			<tr>
+				<td><span class="keyword">int</span></td>
+				<td>2</td>
+				<td>To store a positive or a negative whole number</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">short</span></td>
+				<td>1</td>
+				<td>To store a positive or a negative whole number</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">long</span></td>
+				<td>4</td>
+				<td>To store a positive or a negative whole number</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">unsigned</span></td>
+				<td>2</td>
+				<td>Used to store a positive value only when prefixed with int</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">float</span></td>
+				<td>4</td>
+				<td>To store positive or negative real number</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">double</span></td>
+				<td>8</td>
+				<td>To store positive or negative real number</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">long double</span></td>
+				<td>10</td>
+				<td>To store positive or negative real number</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">char</span></td>
+				<td>1</td>
+				<td>To store a printable or non printable character (ASCII Range -128 to +127)</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">unsigned char</span></td>
+				<td>1</td>
+				<td>To store a printable or non printable character (ASCII Range 0 to 255)</td>
+			</tr>
+			<tr>
+				<td><span class="keyword">void</span></td>
+				<td></td>
+				<td>It associates identifier with an empty value</td>
+			</tr>
+		</table>
+	</p>
 	</div>
 	<div class="pagination">
 	<ul class="pagination">
