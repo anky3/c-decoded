@@ -6,6 +6,13 @@
 		url('font/akashi-webfont.ttf') format('truetype'),
 		url('font/akashi-webfont.svg#webfont') format('svg');
 	}
+@font-face{ font-family: 'Vera-Bold';
+	src:url('font/Vera-Bold-webfont.eot');
+	src:url('font/Vera-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/Vera-Bold-webfont.woff') format('woff'),
+		url('font/Vera-Bold-webfont.ttf') format('truetype'),
+		url('font/Vera-Bold-webfont.svg#webfont') format('svg');
+	}
 @font-face{ font-family: 'AftaSansThin-Regular';
 	src:url('font/AftaSansThin-Regular-webfont.eot');
 	src:url('font/AftaSansThin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -200,7 +207,7 @@ p.tl{
 	font-weight:900;
 	padding:4px 12px 4px;
 	text-align:left;
-	font-family: 'AftaSansThin-Regular', sans-serif;
+	font-family: 'Vera-Bold', sans-serif;
 	font-size:16px;
 	color:#444444;
 	background:#BABABA;
@@ -265,7 +272,7 @@ ol.num2{
 	color:#444444;
 	}
 ol.num2 li{
-	padding-bottom:4px;
+	padding-bottom:12px;
 	}
 ul.circle{
 	padding:0;
