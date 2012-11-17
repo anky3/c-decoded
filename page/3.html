@@ -45,78 +45,61 @@
 	</p>
 	<br />
 	<p class="tl">
+		Primitive
+	</p>
+	<p class="para">
+		The primitive data types form the basic building block for defining an identifier. C language supports four primitive data types, namely, <a href="#int" class="tip">integer</a>, <a href="#dec" class="tip">real</a>, <a href="#ch" class="tip">character</a> and <a href="#void" class="tip">empty</a>.
+	</p>	
+	<br />
+	<p class="tl" id="#int">
+		Integer 
+	</p>
+	<p class="para">
+		Many numeric operations involve a positive or a negative integer number. To store integer numbers in an identifier, we need to define the integer of type <span class="keyword"><i>int</i></span>. In this case, int is a reserved word, which indicates that the identifier is capable of storing an integer data value.
+	</p>	
+	<br />
+	<p class="tl" id="#dec">
+		Real 
+	</p>
+	<p class="para">
+		Most of the financial and mathematical calculations require a real number in calculation. To use real values in C language, we need to use keyword <span class="keyword"><i>float</i></span> as the data type.
+	</p>	
+	<br />
+	<p class="tl" id="#ch">
+		Character 
+	</p>
+	<p class="para">
+		To store Character data values, we have to use a keyword <span class="keyword"><i>char</i></span>. 
+	</p>	
+	<br />
+	<p class="tl" id="#void">
+		Empty Data Set 
+	</p>
+	<p class="para">
+		The last one of the primitive data types in C language is <span class="keyword"><i>void</i></span>. A <span class="keyword"><i>void</i></span> data type doesn’t associate an identifier with a specific type, such as integer or real. It associates identifier with an empty value. It is mainly used along with functions and pointers.
+	</p>	
+	<br />
+	<p class="tl">
 		User-defined Data Type
 	</p>
 	<p class="para">
-		<span class="tab"></span>New data type created by the user from the existing data type is called user-defined Data type. Keyword <span class="keyword">typedef</span> is used to create a new data type
+		<span class="tab"></span>New data type created by the user from the existing data type is called user-defined Data type. Keyword <span class="keyword">typedef</span> is used to create a new data type.
+		<br /><br />
+		<span class="tab"></span>Syntax:
 	</p>
-	<br />
-	<p class="tl">
-		Pseudo code
+		<div class="para-code">
+		<pre class='brush: c'>
+			typedef datatype identifier;
+		</pre>
+		</div>
+	<p class="para" style="margin-top:-20px;">
+		<span class="tab"></span>Example:
 	</p>
-	<p class="para">
-		<span class="tab"></span>The term Pseudo is a Greek word, which means false or fake. Hence, Pseudo code means writing a fake code in any language that is spoken globally. This code is written in a manner such that in times of need it can be converted into a program source code of any desired programming language.<br /><br />
-		<span class="tab"></span>Example: Pseudo code of a program of adding two numbers<br /><br />
-		<span class="tab"></span><span class="tab"></span>>> Get value of a & b<br />
-		<span class="tab"></span><span class="tab"></span>>> Add a & b<br />
-		<span class="tab"></span><span class="tab"></span>>> Return or print its sum
-	</p>	
-	<br />
-	<p class="tl">
-		Flowchart
-	</p>
-	<p class="para">
-		<span class="tab"></span>A flowchart is a pictorial representation of a sequence of steps to be performed for solving a given problem. It uses a fixed set of symbols to represent various types of instructions.<br /><br />
-		<span class="tab"></span>Basic Symbols of a flowchart<br />
-		<p class="indent2">The American National Standard Institution (ANSI) has standardizes symbols that can be used while drawing a flowchart.</p><br />
-		<table class="table1">
-				<th class="sr">Symbol</th>
-				<th>Name</th>
-				<th>Description</th>
-			<tr>
-				<td>1.</td>
-				<td>Oval</td>
-				<td>Start/End</td>
-			</tr>
-			<tr>
-				<td>2.</td>
-				<td>Parallelogram</td>
-				<td>Input/Output</td>
-			</tr>
-			<tr>
-				<td>3.</td>
-				<td>Diamond</td>
-				<td>Decision</td>
-			</tr>
-			<tr>
-				<td>4.</td>
-				<td>Rectangle</td>
-				<td>Process</td>
-			</tr>
-			<tr>
-				<td>5.</td>
-				<td>Circle</td>
-				<td>Connector</td>
-			</tr>
-			<tr>
-				<td>6.</td>
-				<td>Arrow</td>
-				<td>Flow line</td>
-			</tr>
-		</table>
-	</p>	
-	<br />
-	<p class="tl">
-		Algorithm
-	</p>
-	<p class="para">
-		<span class="tab"></span>An Algorithm is a sequence of finite steps required to perform a specific task.<br /><br />
-		<span class="tab"></span>Example: Algorithm of addition of two numbers<br/><br/>
-		<span class="tab"></span><span class="tab"></span>Step 1: Start<br />
-		<span class="tab"></span><span class="tab"></span>Step 2: Take a, b, c<br />
-		<span class="tab"></span><span class="tab"></span>Step 3: c = a + b<br />
-		<span class="tab"></span><span class="tab"></span>Step 4: Print c<br />
-	</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+			typedef int num;
+		</pre>
+		</div>
 	<br />
 	</div>
 	<div class="pagination">
