@@ -138,6 +138,7 @@ ul.pagination, ul.pagination a{
 	font-family: 'Arial', sans-serif;
 	font-size:20px;
 	background:#50C1E7;
+	height:25px;
 	border-radius: 10px 30px / 15px 25px;	
 	text-align:center;
 	}
@@ -210,10 +211,14 @@ p.para{
 	text-align:left;
 	color:#444444;
 	}
-.tip {
+.tip, .tip a:link, .tip a:active, .tip a:visited{
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	text-align:left;
+	color:#444444;
     text-decoration: underline;
 }
-.tip:hover {
+.tip:hover, .tip a:hover {
     color: black;
     text-decoration: underline;
 	cursor:pointer;
