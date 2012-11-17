@@ -5,6 +5,7 @@ color:#eee;
 
 ul li.active{ /*IE6 hack- hide gooey effect from that browser*/
 _visibility: hidden; /*IE6 rule*/
+visibility: hidden\9;
 }
 
 /* ######### Thick Underline Menu CSS ######### */

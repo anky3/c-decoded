@@ -130,6 +130,7 @@ div.pagination{
 	}
 ul.pagination, ul.pagination a{
 	padding:0;
+	padding-bottom:1;
 	margin:0;
 	list-style: none;
 	position:relative;
@@ -138,7 +139,6 @@ ul.pagination, ul.pagination a{
 	font-family: 'Arial', sans-serif;
 	font-size:20px;
 	background:#50C1E7;
-	height:25px;
 	border-radius: 10px 30px / 15px 25px;	
 	text-align:center;
 	}
@@ -184,11 +184,16 @@ h1.head-logo{
 	position:absolute;
 	margin:20px 32px 0px;
 	padding:0;
+	}
+.head-logo, .head-logo a, .head-logo a:hover, .head-logo a:active, .head-logo a:focus, .head-logo a:link, .head-logo a:visited{
+	padding:0;
 	font-weight:bold;
 	font-family: 'akashi', sans-serif;
 	font-size:48px;
 	color:white;
 	text-shadow: 1px 1px #d5d2d2;
+	text-decoration:none;
+	cursor:pointer;
 	}
 p.tl{
 	margin:24px 0 0;
