@@ -45,66 +45,148 @@
 		Input and Output functions
 	</p>
 	<p class="para">
-		<span class="tab"></span>The type of data value that can be stored in an identifier is known as its data type.
+		<span class="tab"></span>To provide input and output, C language provides inbuilt functions. The functions for input and output are based on the data types and are categorized as formatted functions and unformatted functions.
+		<p class="indent2"><b>Formatted Functions</b><br /><br /></p>
+		<table class="table3">
+			<th>Functions</th><th>Use</th><th>Data type Supported</th>
+			<tr><td> scanf()</td><td>Input</td><td>All</td></tr>
+			<tr><td> printf()</td><td>output</td><td>All</td></tr>
+		</table>
+		<br /><br /><br />
+		<p class="indent2"><b>Unformatted Functions</b><br /><br /></p>
+		<table class="table3">
+			<th>Functions</th><th>Use</th><th>Data type Supported</th>
+			<tr><td>getchar()</td><td>Input</td><td>char</td></tr>
+			<tr><td>gets()</td><td>Input</td><td>char</td></tr>
+			<tr><td>getc()</td><td>Input</td><td>char</td></tr>
+			<tr><td>putchar()</td><td>output</td><td>char</td></tr>
+			<tr><td>puts()</td><td>output</td><td>char</td></tr>
+			<tr><td>putc()</td><td>output</td><td>char</td></tr>
+		</table>
 	</p>
 	<br />
 	<p class="tl">
-		Primitive
+		Formatted Functions
 	</p>
 	<p class="para">
-		The primitive data types form the basic building block for defining an identifier. C language supports four primitive data types, namely, <a href="#int" class="tip">integer</a>, <a href="#dec" class="tip">real</a>, <a href="#ch" class="tip">character</a> and <a href="#void" class="tip">empty</a>.
+		<span class="tab"></span>The formatted functions are considered to be all-purpose functions. These functions are used to input or output all type of data.
 	</p>	
 	<br />
-	<p class="tl" id="int">
-		Integer 
+	<p class="tl" id="input">
+		Input Functions
 	</p>
 	<p class="para">
-		Many numeric operations involve a positive or a negative integer number. To store integer numbers in an identifier, we need to define the integer of type <span class="keyword">int</span>. In this case, <span class="keyword">int</span> is a reserved word, which indicates that the identifier is capable of storing an integer data value.
-	</p>	
-	<br />
-	<p class="tl" id="dec">
-		Real 
+		<span class="tab"></span>C language provides a pre-defined function called <span class="func">scanf()</span> to take the input
+		<br />
 	</p>
-	<p class="para">
-		Most of the financial and mathematical calculations require a real number in calculation. To use real values in C language, we need to use keyword <span class="keyword">float</span> as the data type.
-	</p>	
-	<br />
-	<p class="tl" id="ch">
-		Character 
-	</p>
-	<p class="para">
-		To store Character data values, we have to use a keyword <span class="keyword">char</span>. 
-	</p>	
-	<br />
-	<p class="tl" id="void">
-		Empty Data Set 
-	</p>
-	<p class="para">
-		The last one of the primitive data types in C language is <span class="keyword">void</span>. A <span class="keyword">void</span> data type doesn’t associate an identifier with a specific type, such as integer or real. It associates identifier with an empty value. It is mainly used along with functions and pointers.
-	</p>	
-	<br />
-	<p class="tl">
-		User-defined Data Type
-	</p>
-	<p class="para">
-		<span class="tab"></span>New data type created by the user from the existing data type is called user-defined Data type. Keyword <span class="keyword">typedef</span> is used to create a new data type.
-		<br /><br />
-		<span class="tab"></span>Syntax:
-	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
 		<div class="para-code">
 		<pre class='brush: c'>
-			typedef datatype identifier;
-		</pre>
-		</div>
-	<p class="para" style="margin-top:-20px;">
-		<span class="tab"></span>Example:
-	</p>
-		<div class="para-code">
-		<pre class='brush: c'>
-			typedef int num;
-		</pre>
+			scanf("format string", address list of identifier);</pre>
 		</div>
 	<br /> 
+	<p class="tl" id="input">
+		Format String
+	</p>
+	<p class="para">
+		<span class="tab"></span>The format string consists of certain pre-defined set of alphabets. Each alphabet refers to a specific data type.
+		<br /><br />
+		<table class="table4">
+				<th>DATA VALUE</th><th>DATA TYPE</th><th>FORMAT STRING</th>
+			<tr>
+				<td></td><td><span class="keyword">short int</span>/<span class="keyword">int</span></td><td>%d or %i</td>
+			</tr>
+			<tr>
+				<td>Integer</td><td><span class="keyword">unsigned int</span></td><td>%u</td>
+			</tr>
+			<tr>
+				<td></td><td><span class="keyword">long unsigned int</span></td><td>%lu</td>
+			</tr>
+			<tr class="line">
+				<td></td><td><span class="keyword">long int</span></td><td>%ld</td>
+			</tr>
+			<tr class="line">
+				<td>Hexadecimal</td><td><span class="keyword">int</span></td><td>%x or %p</td>
+			</tr>
+			<tr class="line">
+				<td>Octal</td><td><span class="keyword">int</span></td><td>%o</td>
+			</tr>
+			<tr>
+				<td></td><td><span class="keyword">signed char</span></td><td>%c</td>
+			</tr>
+			<tr>
+				<td>Character</td><td><span class="keyword">unsigned char</span></td><td>%c</td>
+			</tr>
+			<tr class="line">
+				<td></td><td><span class="keyword">char *</span> (string)</td><td>%s</td>
+			</tr>
+			<tr>
+				<td></td><td><span class="keyword">float</span></td><td>%f or %g</td>
+			</tr>
+			<tr>
+				<td>Real</td><td><span class="keyword">double</span></td><td>%lf</td>
+			</tr>
+			<tr>
+				<td></td><td><span class="keyword">long double</span></td><td>%Lf</td>
+			</tr>
+		</table>
+	</p>
+	<br /> 
+	<p class="tl" id="output">
+		Output Function
+	</p>
+	<p class="para">
+		<span class="tab"></span>C language provides a pre-defined function called <span class="func">printf()</span> to show the output.
+		<br />
+	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+		printf("format specifier", list of identifier);
+					/*	OR	*/
+		printf("message string");</pre>
+		</div>
+	<br /> 
+	<p class="tl">
+		Unformatted Functions
+	</p>
+	<p class="para">
+		<span class="tab"></span>The unformatted functions cannot format data and work with only a character data type. It do not need a conversion symbol similar to the formatted functions.
+	</p>	
+	<br />
+	<p class="tl">
+		Unformatted single character I/O functions 
+	</p>
+	<p class="para">
+		<span class="tab"></span>C language provides us with two unformatted functions <span class="func">getchar()</span> and <span class="func">getc()</span> that work on character data type and two output functions <span class="func">putchar()</span> and <span class="func">putc()</span> to give us the output. 
+		<br />
+	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+			/*	Input	*/
+		identifier name = getchar();
+		identifier name = getc(stdin);
+		
+			/*	Output */
+		putchar(identifier name);
+		putchar (identifier name, stdout);</pre>
+		</div>	
+	<br />
+	<p class="tl">
+		Unformatted String I/O functions 
+	</p>
+	<p class="para">
+		<span class="tab"></span>C language provides us with two unformatted functions gets() and puts() to input and output a string. A string in C is represented as asset of characters that is always terminated with a <a class="tip" rel="balloon1">null character</a>.
+	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+		Gets(identifier name);
+			/*	AND	*/
+		puts(identifier name);</pre>
+		</div>	
+	<br />
 	</div>
 	<div class="pagination">
 	<ul class="pagination">
@@ -122,6 +204,10 @@
 	</div>
 </div>
 </center>
+	<!--Balloon tooltip-->
+	<div id="balloon1" class="balloonstyle" style="width:60px; text-align:center;">
+		 '\0'
+	</div>
 	<!-- jquery -->	
 	<script src="http://anky3.github.com/c-decoded/script/jquery-1.7.2.min.js" type="text/javascript"></script>
 	<!-- easing plugin ( optional ) -->

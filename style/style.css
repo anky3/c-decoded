@@ -310,7 +310,7 @@ ul.square li{
 	margin:0 40px 0;
 	padding:0;
 	}
-table{
+table.table1, table.table2, table.table3, table.table4{
 	align:center;
 	margin:0 40px 0;
 	padding:0;
@@ -360,6 +360,32 @@ table{
 	padding:4px 2px 2px;
 	color:#444444;
 	}
+table.table4{
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size:16px;
+	border-left:3px solid #919191;
+	border-right:3px solid #919191;
+border-bottom:3px solid #919191;
+border-top:3px solid #919191;
+	}
+table.table4 th{
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 0 5px;
+	background:#E1F7FF;
+	text-align:center;
+	}
+table.table4 td{
+	font-family: 'Amaranth-webfont', sans-serif;
+	font-size:16px;
+	padding:5px 0 5px;
+	width:200px;
+	text-align:center;
+	}
+table.table4 tr.line{
+border-bottom:3px solid #919191;
+	}
 .indent{
 	padding:0;
 	margin:0;
@@ -396,6 +422,14 @@ padding:0;
 	}
 .keyword {
 	color: #006699 !important;
+	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+	font-weight:bold;
+	background-color: white !important;
+	border: 1px solid rgb(240, 240, 240);
+	font-size: 1em !important;
+ }
+.func {
+	color: #ff1493 !important;
 	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
 	font-weight:bold;
 	background-color: white !important;
