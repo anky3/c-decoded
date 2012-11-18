@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head> 
-	<title>Source&nbsp;Codes&nbsp;-&nbsp;C&nbsp;Decoded!</title>
+<head>
+	<title>C&nbsp;Decoded!&nbsp;-&nbsp;Archive</title>
 	<meta name="description" content="C Decoded! A Website Where You will find Notes, Codes, and extra Tips of C Language">
-	<meta name="keywords" content="Steps for solving problem, Techniques of solving problem , Pseudo code, Flowchart, Algorithm ">
+	<meta name="keywords" content="What is C, Tokens">
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 	<script type="text/javascript" src="http://anky3.github.com/c-decoded/script/jquery.min.js"></script> <!-- jquery -->
 	<script src="http://anky3.github.com/c-decoded/script/gooeymenu.js"></script>	<!-- menu js -->
@@ -28,9 +28,9 @@
 	<div class="menu">
 		<ul id="gooeymenu3" class="underlinemenu">
 		<li><a href="http://anky3.github.com/c-decoded/">Home</a></li>&nbsp;
-		<li><a href="http://anky3.github.com/c-decoded/code/" class="selected">Source Codes</a></li>&nbsp;
+		<li><a href="http://anky3.github.com/c-decoded/code/">Source Codes</a></li>&nbsp;
 		<li><a href="http://anky3.github.com/c-decoded/download.html">Download</a></li>&nbsp;
-		<li><a href="http://anky3.github.com/c-decoded/archive.html">Archive</a></li>&nbsp;
+		<li><a href="http://anky3.github.com/c-decoded/archive.html" class="selected">Archive</a></li>&nbsp;
 		</ul>
 
 		<script>
@@ -39,83 +39,28 @@
 	</div>
 	<div class="place-h">
 	</div>
-	<div class="content">
-		<p class="tl">
-			First C program
-		</p>
-		<div class="para-code">
-		<pre class='brush: c'>
-			/* First C program */
-			#include&lt;stdio.h>
-			#include&lt;conio.h>
-			void main()
-			{
-				clrscr();
-				printf("My First C program");
-				getch();
-			}</pre>
-		</div>
-		<p class="tl">
-			Simple Program to Find Sum of a and b
-		</p>
-		<div class="para-code">
-		<pre class='brush: c'>
-			#include&lt;stdio.h>
-			#include&lt;conio.h>
-			void main()
-			{
-				int a,b,c;
-				clrscr();
-				printf("Enter value of a: ");
-				scanf("%d", &a);
-				printf("Enter value of b: ");
-				scanf("%d", &b);
-				c=a+b;
-				printf(" %d\n+%d\n-----\n %d", a, b, c);
-				getch();
-			}</pre>
-		</div>
-		<p class="tl">
-			Sum, Difference, Product & Division of a and b
-		</p>
-		<div class="para-code">
-		<pre class='brush: c'>
-			#include&lt;stdio.h>
-			#include&lt;conio.h>
-			void main()
-			{
-				int a,b,c;
-				clrscr();
-				printf("Enter value of a: ");
-				scanf("%d", &a);
-				printf("Enter value of b: ");
-				scanf("%d", &b);
-				c=a+b;
-				printf("\nSum = %d", a, b, c);
-				c=a-b;
-				printf("\nDifference = %d", a, b, c);
-				c=a*b;
-				printf("\nProduct = %d", a, b, c);
-				c=a/b;
-				printf("\nQuotent = %d", a, b, c);
-				getch();
-			}</pre>
-		</div>
-	</div>
-	<div class="pagination">
-	<ul class="pagination">
-		<li class="hide">&lt;&lt;</li>
-		<li class="present">1</li>
-		<li>2</li>
-		<li>&gt;&gt;</li>
-	</ul>
+	<div class="content"><br /><br />
+		<img src="img/under_const.png" /><br /><br /><br />
 	</div>
 	<hr class="ft" />
 	<div class="footer">
-	<p>Designed and maintained by A Creativity<br />&copy; 2012</p>
+		<p>Designed and maintained by A Creativity<br />&copy; 2012</p>
 	</div>
 </div>
 </center>
+	<!--Balloon tooltip-->
+	<div id="balloon1" class="balloonstyle">
+		This program is known as a <i>source code</i> or a <i>source program</i>. The extension of the executable C program is .c
+	</div>
+	<div id="balloon2" class="balloonstyle">
+		A C compiler consists of two different programs, namely, a preprocessor and a translator. The preprocessor removes all the preprocessor directive statements from the source code and prepares the source code for translation. The translator the converts the source code into a machine language code, and vice versa. The machine language code is known as an object code or an object program. The extension of the object code is .obj
+	</div>
+	<div id="balloon3" class="balloonstyle" >
+		The extension of executable code is .exe
+	</div>
+	<div id="balloon4" class="balloonstyle" >
+		The linker is needed in C as most of the operations that we perform in C have been provided as inbuilt functions.
+	</div>
 	<!-- jquery -->	
 	<script src="http://anky3.github.com/c-decoded/script/jquery-1.7.2.min.js" type="text/javascript"></script>
 	<!-- easing plugin ( optional ) -->
@@ -133,9 +78,11 @@
 				easingType: 'linear' 
 	 		};
 			*/
+			
 			$().UItoTop({ easingType: 'easeOutQuart' });
+			
 		});
-	</script>
+	</script> 
 	<script type='text/javascript'>
 		SyntaxHighlighter.defaults['auto-links'] = false;
 		SyntaxHighlighter.defaults['toolbar'] = false;
