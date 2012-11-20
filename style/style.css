@@ -483,6 +483,9 @@ p.indent2{
 	color:#444444;
 	margin-left:58px;
 	}
+img.btn:hover{
+	opacity:0.92;
+	}
 p.indent3{
 	padding:0;
 	margin:0;
