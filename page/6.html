@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>C&nbsp;Decoded!&nbsp;-&nbsp;Page&nbsp;5</title>
+	<meta name="description" content="C Decoded! A Website Where You will find Notes, Codes, and extra Tips of C Language">
+	<meta name="keywords" content="Steps for solving problem, Techniques of solving problem , Pseudo code, Flowchart, Algorithm ">
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<script type="text/javascript" src="http://anky3.github.com/c-decoded/script/jquery.min.js"></script> <!-- jquery -->
+	<script src="http://anky3.github.com/c-decoded/script/gooeymenu.js"></script>	<!-- menu js -->
+	<link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/gooeymenu.css" />	<!-- menu css -->
+	<link rel="stylesheet" href="../style/style.css" type="text/css" charset="utf-8" />			<!-- MAIN CSS -->
+	<link rel="stylesheet" media="screen,projection" href="http://anky3.github.com/c-decoded/style/ui.totop.css" />	<!-- scroll to top button -->
+	<link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/balloontip.css" />			<!-- BALLOON TOOLTIP CSS -->
+	<script type="text/javascript" src="http://anky3.github.com/c-decoded/script/balloontip.js"></script>			<!-- BALLOON TOOLTIP JS -->
+	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/shThemeDefault.css" type="text/css" charset="utf-8" />			<!-- CODE BLOCK CSS -->
+	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/shCore.css" type="text/css" charset="utf-8" />			<!-- CODE BLOCK CSS -->
+	<script src="http://anky3.github.com/c-decoded/script/shCore.js"></script>			<!-- CODE BLOCK JS -->
+	<script src="http://anky3.github.com/c-decoded/script/shBrushCpp.js"></script>			<!-- CODE BLOCK JS (C/CPP Language) -->
+</head>
+<body>
+<center>
+<div class="main">
+	<div class="b-top"></div>
+	<div class="head">
+	<a href="http://anky3.github.com/c-decoded/" class="head-logo"><h1 class="head-logo"><span style="font-size:68px;">C</span>&nbsp;decoded!</h1></a>
+	</div>
+	<div class="h-top"></div>
+	<div class="menu">
+		<ul id="gooeymenu3" class="underlinemenu">
+		<li><a href="http://anky3.github.com/c-decoded/" class="selected">Home</a></li>&nbsp;
+		<li><a href="http://anky3.github.com/c-decoded/code/">Source Codes</a></li>&nbsp;
+		<li><a href="http://anky3.github.com/c-decoded/download.html">Download</a></li>&nbsp;
+		<li><a href="http://anky3.github.com/c-decoded/archive.html">Archive</a></li>&nbsp;
+		</ul>
+
+		<script>
+			gooeymenu.setup({id:'gooeymenu3', fxtime:250})
+		</script>
+	</div>
+	<div class="place-h">
+		Home > Page 5
+	</div>
+	<div class="content">
+	<p class="tl">
+		Decision Structure
+	</p>
+	<p class="para">
+		<span class="tab"></span>The decision structure of C language is used to make selections. Selection allows us to choose options from two or more options available within the program. In C language, decision structure allows us to perform pre-defined actions based on the results of one or more conditions.<br />
+	</p>
+	<br />
+	<p class="tl" id="ar_op">
+		The Two-Way Selection
+	</p>
+	<p class="para">
+		<span class="tab"></span>A two-way selection in C language represents a conditional statement that can be evaluated as true or false by the compiler. The true answer leads to the execution of one or more action statements. In case answer being false, the other set of action statement is executed.<br /><br />
+	</p>
+	<br /><br />
+		<img src="../img/flow-two_way.png" title="Flowchart of a two-way selection" />
+	<br />
+	<br />
+	<p class="indent3">
+		Figure: <i>A Two-Way selection Flowchart</i>
+	</p>
+	<br />
+	<br />
+	<p class="tl" id="as_op">
+		The Simple If Statement
+	</p>
+	<p class="para">
+		<span class="tab"></span>A simple if statement represents a case where an action is to be taken only when specified condition is true and no action is to be taken in case of false condition.<br /><br />
+	</p><br />
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+			if(test_condition)
+				Action Statement;</pre>
+		</div>
+	<br /> <br />
+	<img src="../img/flow-one_way.png" title="Flowchart of a one-way selection" />
+	<br /> 
+	<br /> 
+	<p class="indent3">
+		Figure: <i>Logical flow of a Simple If Statement</i>
+	</p>
+	<br /> <br /> 
+	<p class="tl" id="rel_op">
+		The If-Else Statement
+	</p>
+	<p class="para">The if-else statement is an improvement over the simple if statement. In the simple if statement, there is only one block of action statements. This block gets executed when the test condition is evaluated to be true. In case the test condition is evaluated to be false, no action is taken. This can be achieved by making use of the if-else statement.
+		<br />
+	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+			if(test_condition)
+			{
+				True actions statements;
+			}
+			else
+			{
+				False action statements;
+			}</pre>
+		</div>
+	<br /><br />
+		<img src="../img/flow-two_way.png" title="Flowchart of a two-way selection" />
+	<br />
+	<br />
+	<p class="indent3">
+		Figure: <i>Logical Flow of the If-Else Statement</i>
+	</p>
+	<br /> 
+	<p class="tl" id="inc_dec">
+		Increment and Decrement Operators
+	</p>
+	<p class="para">
+		<span class="tab"></span>C language provides two unary operators, namely, <span class="plain">++</span> and <span class="plain">--</span>, for the purpose of increment and decrement of value by 1. The expression formed by using increment or decrement operator is termed as unary expression, as these operators require only one operand.
+		<br />
+	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+		++identifier;		//Pre-increment
+		identifier++;		//Post-increment
+		
+		--identifier;		//Pre-decrement
+		identifier--;		//Post-decrement</pre>
+		</div>	
+		<p class="indent2"><b>Example</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+			#include&lt;stdio.h>
+			#include&lt;conio.h>
+			void main()
+			{
+				int a=6,b;
+				clrscr();
+				b = --a + --a;
+				printf("a = %d\tb = %d\n",a,b);
+				b = a-- + a--;
+				printf("a = %d\tb = %d\n",a,b);
+				b = ++a + ++a;
+				printf("a = %d\tb = %d\n",a,b);
+				b = a++ + a++;
+				printf("a = %d\tb = %d",a,b);
+				getch();
+			}</pre>
+		</div>
+		<p class="indent2"><b>Output</b>:</p>
+		<p class="output">a = 4	b = 8<br />a = 2	b = 8<br />a = 4	b = 8<br />a = 6	b = 8</p>
+	<br /> 
+	<p class="tl" id="con_op">
+		Conditional Operators
+	</p>
+	<p class="para">
+		<span class="tab"></span>C language provides us an operator known as conditional operator ternary operator for condition checking. It consists of combination of two symbols, that is <span class="plain">?</span> and <span class="plain">:</span>.
+	</p>	
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+			(condition) ? (true statement) : (false statement);</pre>
+		</div>
+	<br />
+	<p class="tl" id="log_op">
+		Logical Operator 
+	</p>
+	<p class="para">
+		<span class="tab"></span>The logical operators are used to compare Boolean expressions. The result of the Boolean is always Boolean. C language provides us three logical operators, namely, AND, OR, and NOT.
+		<br /><br />
+		<table class="table1">
+				<th>SYMBOL</th><th>NAME</th><th>No. of Operands Required</th>
+			<tr>
+				<td><span class="plain">&&</span></td><td>Logical AND</td><td>Two</td>
+			</tr>
+			<tr>
+				<td><span class="plain">||</span></td><td>Logical OR</td><td>Two</td>
+			</tr>
+			<tr>
+				<td><span class="plain">!</span></td><td>Logical NOT</td><td>One</td>
+			</tr>
+		</table>
+	</p>
+		<p class="indent2"><b>Syntax</b>:</p>
+		<div class="para-code">
+		<pre class='brush: c'>
+		Expression_1 && Expression_2
+		Expression_1 || Expression_2
+		!(Expression)</pre>
+		</div>	
+		<p class="indent2"><b>Truth Table of Logical Operations</b>:</p><br />
+		<table class="table1">
+				<th>Return Value<br />of<br />Expression 1</th><th>Return Value<br />of<br />Expression 2</th><th>Expression 1<br />&&<br />Expression 2</th><th>Expression 1<br />||<br />Expression 2</th><th>! (Expression 1)</th>
+			<tr>
+				<td>0</td><td>0</td><td>0</td><td>0</td><td>1</td>
+			</tr>
+			<tr>
+				<td>1</td><td>0</td><td>0</td><td>0</td><td>0</td>
+			</tr>
+			<tr>
+				<td>0</td><td>1</td><td>0</td><td>1</td><td>1</td>
+			</tr>
+			<tr>
+				<td>1</td><td>1</td><td>1</td><td>1</td><td>0</td>
+			</tr>
+		</table>
+	<br />
+	<p class="tl" id="bit_op">
+		Bitwise Operators
+	</p>
+	<p class="para">
+		<span class="tab"></span>C language allows us to operate directly at bit level using six operators.
+	</p><br />
+		<table class="table1">
+				<th>SYMBOL</th><th>NAME</th><th>Usage</th><th>No. of Operands required</th>
+			<tr>
+				<td>& </td><td>Bitwise AND</td><td>To perform AND operation on two bits</td><td>Two</td>
+			</tr>
+			<tr>
+				<td>|</td><td>Bitwise OR</td><td>To perform OR operation on two bits</td><td>Two</td>
+			</tr>
+			<tr>
+				<td>~</td><td>Bitwise NOT</td><td>To perform NOT operation on two bits</td><td>One</td>
+			</tr>
+			<tr>
+				<td>^</td><td>Bitwise Exclusive OR</td><td>To perform XOR operation on two bits</td><td>Two</td>
+			</tr>
+			<tr>
+				<td>&lt;&lt;</td><td>Left Shift</td><td>First operand to be shifted left the number of bits specified by the second operand</td><td>Two</td>
+			</tr>
+			<tr>
+				<td>&gt;&gt;</td><td>Right Shift</td><td>First operand to be shifted right the number of bits specified by the second operand</td><td>Two</td>
+			</tr>
+		</table><br /><br />
+		<p class="indent2"><b>Truth Table for Bitwise Operations</b>:</p><br />
+		<table class="table1">
+				<th>A</th><th>B</th><th>~A</th><th>~B</th><th>A & B</th><th>A | B</th><th>A ^ B</th>
+			<tr>
+				<td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td>
+			</tr>
+			<tr>
+				<td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+			</tr>
+			<tr>
+				<td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td>
+			</tr>
+			<tr>
+				<td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td>
+			</tr>
+		</table>
+	<br />
+	<p class="tl" id="spc_op">
+		Special Operators
+	</p>
+	<p class="para">
+		<span class="tab"></span>C language provides us with two unformatted functions gets() and puts() to input and output a string. A string in C is represented as asset of characters that is always terminated with a <a class="tip" rel="balloon1">null character</a>.
+	</p><br />
+		<table class="table4">
+				<th>CATEGORY</th><th>SYMBOL</th><th>NAME</th><th>USAGE</th>
+			<tr class="line">
+				<td>Comma</td><td>,</td><td>Comma</td><td>To separateidentifiers at the time of declaration</td>
+			</tr>
+			<tr class="line">
+				<td>Size Of</td><td>sizeof()</td><td>Size Of</td><td>To check the size of the data type</td>
+			</tr>
+			<tr>
+				<td>Pointer</td><td>& </td><td>Ampersand</td><td>To identify address or refference of an identifier</td>
+			</tr>
+			<tr class="line">
+				<td></td><td>*</td><td>indirection</td><td>To provide indirection to pointer identifier</td>
+			</tr>
+			<tr>
+				<td>Member Selction</td><td>.</td><td>Dot</td><td>To access member of structure or union</td>
+			</tr>
+			<tr class="line">
+				<td></td><td>-></td><td>member by</td><td>To access members of structure or union when pointer type identifier of a structure or a union is defined</td>
+			</tr>
+		</table>
+	<br />
+	<p class="tl" id="prec_asso">
+		Precedence & Associativity of Operators
+	</p><br />
+		<table class="table4">
+				<th>Operator symbol</th><th>Usage</th><th>Precedence</th><th>Associativity</th>
+			<tr>
+				<td>( )</td><td>Function call</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>[ ]</td><td>Array expression</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>-></td><td>Structure Operator</td><td>First</td><td>Left to Right</td>
+			</tr>
+			<tr class="line">
+				<td>.</td><td>Structure Operator</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>+</td><td>Unary Plus</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>-</td><td>Unary Minus</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>++</td><td>Increment</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>--</td><td>Decrement</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>!</td><td>Logical NOT</td><td>Second</td><td>Right to Left</td>
+			</tr>
+			<tr>
+				<td>~</td><td>Bitwise NOT</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>*</td><td>Pointer Operator</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>&</td><td>Address Operator</td><td></td><td></td>
+			</tr>
+			<tr class="line">
+				<td>sizeof()</td><td>Size Of Operator</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>*</td><td>Multiplication</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>/</td><td>Division</td><td>Third</td><td>Left to Right</td>
+			</tr>
+			<tr class="line">
+				<td>%</td><td>Modulo Division</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>+</td><td>Binary Addition</td><td>Fourth</td><td>Left to Right</td>
+			</tr>
+			<tr class="line">
+				<td>-</td><td>Binary Substraction</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td><<</td><td>Left Shift</td><td>Fifth</td><td>Left to Right</td>
+			</tr>
+			<tr class="line">
+				<td>>></td><td>Right Shift</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td><</td><td>Less than</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td><=</td><td>Less than Equal to</td><td>Sixth</td><td>Left to Right</td>
+			</tr>
+			<tr>
+				<td>></td><td>Greater than</td><td></td><td></td>
+			</tr>
+			<tr class="line">
+				<td>>=</td><td>Greater than Equal to</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>==</td><td>Equal to</td><td>Seventh</td><td>Left to Right</td>
+			</tr>
+			<tr>
+				<td>!=</td><td>Not Equal to</td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>&</td><td>Bitwise AND</td><td>Eighth</td><td>Left to Right</td>
+			</tr>
+			<tr>
+				<td>^</td><td>Bitwise XOR</td><td>Ninth</td><td>Left to Right</td>
+			</tr>
+			<tr>
+				<td>|</td><td>Bitwise OR</td><td>Tenth</td><td>Left to Right</td>
+			</tr>
+			<tr>
+				<td>&&</td><td>Logical AND</td><td>Eleventh</td><td>Left to Right</td>
+			</tr>
+			<tr>
+				<td>||</td><td>Logical OR</td><td>Twelfth</td><td>Left to Right</td>
+			</tr>
+			<tr>
+				<td>? :</td><td>Conditional Operator</td><td>Thirteenth</td><td>Right to Left</td>
+			</tr>
+			<tr>
+				<td>/=, %=, &=, *=, -=, +=, ^=, |=, <<=, >>=</td><td>Assignment Operator</td><td>Fourteenth</td><td>Right to Left</td>
+			</tr>
+			<tr class="line">
+				<td>,</td><td>Comma Operator</td><td>Fifteenth</td><td>Left to Right</td>
+			</tr>
+		</table>
+	<br />
+	</div>
+	<div class="pagination">
+	<ul class="pagination">
+		<li><a href="http://anky3.github.com/c-decoded/page/4.html"><span class="lsf">left</span></a></li>
+		<li><a href="http://anky3.github.com/c-decoded/">1</a></li>
+		<li><a href="http://anky3.github.com/c-decoded/page/2.html">2</a></li>
+		<li><a href="http://anky3.github.com/c-decoded/page/3.html">3</a></li>
+		<li><a href="http://anky3.github.com/c-decoded/page/4.html">4</a></li>
+		<li class="present">5</li>
+		<li class="hide"><span class="lsf">right</span></li>
+	</ul>
+	</div>
+	<hr class="ft" />
+	<div class="footer">
+	<p>Designed and maintained by A Creativity<br />&copy; 2012</p>
+	</div>
+</div>
+</center>
+	<!--Balloon tooltip-->
+	<div id="balloon1" class="balloonstyle" style="width:60px; text-align:center;">
+		 '\0'
+	</div>
+	<!-- jquery -->	
+	<script src="http://anky3.github.com/c-decoded/script/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<!-- easing plugin ( optional ) -->
+	<script src="http://anky3.github.com/c-decoded/script/easing.js" type="text/javascript"></script>
+	<!-- UItoTop plugin -->
+	<script src="http://anky3.github.com/c-decoded/script/jquery.ui.totop.js" type="text/javascript"></script>
+	<!-- Starting the plugin -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+	  			containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+	 		};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<script type='text/javascript'>
+		SyntaxHighlighter.defaults['auto-links'] = false;
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.all();
+	</script>
+</body>
+</html>

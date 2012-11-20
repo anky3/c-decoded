@@ -16,6 +16,37 @@
 	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/shCore.css" type="text/css" charset="utf-8" />			<!-- CODE BLOCK CSS -->
 	<script src="http://anky3.github.com/c-decoded/script/shCore.js"></script>			<!-- CODE BLOCK JS -->
 	<script src="http://anky3.github.com/c-decoded/script/shBrushCpp.js"></script>			<!-- CODE BLOCK JS (C/CPP Language) -->
+
+	<script type="text/javascript" src="http://www.dynamicdrive.com/dynamicindex17/animatedcollapse.js">
+
+		/***********************************************
+		* Animated Collapsible DIV v2.4- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		* This notice MUST stay intact for legal use
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		***********************************************/
+
+		</script>
+
+
+		<script type="text/javascript">
+
+		animatedcollapse.addDiv('jason', 'fade=1,height=80px')
+		animatedcollapse.addDiv('kelly', 'fade=1,height=100px')
+		animatedcollapse.addDiv('michael', 'fade=1,height=120px')
+
+		animatedcollapse.addDiv('cat', 'fade=0,speed=400,group=pets,hide=1')
+		animatedcollapse.addDiv('dog', 'fade=0,speed=400,group=pets,hide=1')
+		animatedcollapse.addDiv('rabbit', 'fade=0,speed=400,group=pets,hide=1')
+
+		animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+			//$: Access to jQuery
+			//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+			//state: "block" or "none", depending on state
+		}
+
+		animatedcollapse.init()
+
+	</script>
 </head>
 <body>
 <center>
@@ -54,7 +85,10 @@
 				printf("My First C program");
 				getch();
 			}</pre>
-		</div>
+		</div><a href="#" style="float:left; margin:0 32px 30px;" rel="toggle[cat]" data-openimage="../img/hide.png" data-closedimage="../img/show.png"><img src="../img/show.png" border="0" /></a>
+		<br /><br />
+		<p class="output" id="cat">My First C program<img width="1" style="margin-bottom:-1px; margin-left:1px;" src="../img/c_blink.gif"></p>
+		<br />
 		<p class="tl">
 			Simple Program to Find Sum of a and b
 		</p>
@@ -68,13 +102,17 @@
 				clrscr();
 				printf("Enter value of a: ");
 				scanf("%d", &a);
-				printf("Enter value of b: ");
+				printf("\nEnter value of b: ");
 				scanf("%d", &b);
 				c=a+b;
 				printf(" %d\n+%d\n-----\n %d", a, b, c);
 				getch();
 			}</pre>
-		</div>
+		</div><a href="#" style="float:left; margin:0 32px 30px;" rel="toggle[rabbit]" data-openimage="../img/hide.png" data-closedimage="../img/show.png"><img src="../img/show.png" border="0" /></a>
+		<br /><br />
+		<p class="output" id="rabbit">Enter value of a: 4<br/>Enter value of b: 6<br /> 4<br />+6<br />-----<br /> 10</p>
+		<br />
+		<br />
 		<p class="tl">
 			Sum, Difference, Product & Division of a and b
 		</p>
@@ -88,19 +126,23 @@
 				clrscr();
 				printf("Enter value of a: ");
 				scanf("%d", &a);
-				printf("Enter value of b: ");
+				printf("\nEnter value of b: ");
 				scanf("%d", &b);
 				c=a+b;
-				printf("\nSum = %d", a, b, c);
+				printf("\nSum = %d", c);
 				c=a-b;
-				printf("\nDifference = %d", a, b, c);
+				printf("\nDifference = %d", c);
 				c=a*b;
-				printf("\nProduct = %d", a, b, c);
+				printf("\nProduct = %d", c);
 				c=a/b;
-				printf("\nQuotent = %d", a, b, c);
+				printf("\nQuotent = %d", c);
 				getch();
 			}</pre>
-		</div>
+		</div><a href="#" style="float:left; margin:0 32px 30px;" rel="toggle[dog]" data-openimage="../img/hide.png" data-closedimage="../img/show.png"><img src="../img/show.png" border="0" /></a>
+		<br /><br />
+		<p class="output" id="dog">Enter value of a: 6<br/>Enter value of b: 2<br />Sum = 8<br />Difference = 4<br />Product = 12<br />Quotent = 0</p>
+		<br />
+		<br />
 	</div>
 	<div class="pagination">
 	<ul class="pagination">
