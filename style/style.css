@@ -69,7 +69,11 @@ span.cd{
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
-
+.fb-like{
+	position:relative;
+	float:right;
+	margin-top:52px;
+	}
 .lsf-icon:before {
   content:attr(title);
   margin-right:0.8em;

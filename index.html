@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="http://anky3.github.com/c-decoded/script/jquery.min.js"></script> <!-- jquery -->
 	<script src="http://anky3.github.com/c-decoded/script/gooeymenu.js"></script>	<!-- menu js -->
 	<link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/gooeymenu.css" />	<!-- menu css -->
-	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/style.css" type="text/css" charset="utf-8" />			<!-- MAIN CSS -->
+	<link rel="stylesheet" href="style/style.css" type="text/css" charset="utf-8" />			<!-- MAIN CSS -->
 	<link rel="stylesheet" media="screen,projection" href="http://anky3.github.com/c-decoded/style/ui.totop.css" />	<!-- scroll to top button -->
 	<link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/balloontip.css" />			<!-- BALLOON TOOLTIP CSS -->
 	<script type="text/javascript" src="http://anky3.github.com/c-decoded/script/balloontip_sm.js"></script>			<!-- BALLOON TOOLTIP JS -->
@@ -19,15 +19,24 @@
 	<script src="http://anky3.github.com/c-decoded/script/shBrushCpp.js"></script>			<!-- CODE BLOCK JS (C/CPP Language) -->
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <center>
 <div class="main">
 	<div class="b-top"></div>
 	<div class="head">
 	<a href="http://cdecoded.ftp.sh" target="_top" class="head-logo"><h1 class="head-logo"><span style="font-size:68px;">C</span>&nbsp;decoded!</h1></a>
 <!--<a style="float:right; margin:1px 1px 0 0;" href="http://www.freedomain.co.nr/" target="_blank" title="Free Domain Name Site"><img src="http://sraea.imdrv.net/348/4.gif" width="88" height="31" border="0" alt="Free Domain Name Site" /></a>-->
-	<a href="#" target="_top" rel="gp" class="sm2"><img src="../img/gp.png" class="sm2" style="margin-right:20px;" /></a>
-	<a href="#" target="_top" rel="twt" class="sm"><img src="../img/twt.png" class="sm" style="margin-right:10px;" /></a>
-	<a href="#" target="_top" rel="fb" class="sm"><img src="../img/fb.png" class="sm" style="margin-right:10px;" /></a>
+	<a href="#" target="_top" rel="gp" class="sm2"><img src="img/gp.png" class="sm2" style="margin-right:20px;" /></a>
+	<a href="#" target="_top" rel="twt" class="sm"><img src="img/twt.png" class="sm" style="margin-right:10px;" /></a>
+	<a href="#" target="_top" rel="fb" class="sm"><img src="img/fb.png" class="sm" style="margin-right:10px;" /></a>
+	<div class="fb-like" data-href="http://cdecoded.ftp.sh/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="segoe ui"></div>
 	</div>
 	<div class="h-top"></div>
 	<div class="menu">

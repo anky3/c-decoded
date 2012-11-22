@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/gooeymenu.css" />	<!-- menu css -->
 	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/style.css" type="text/css" charset="utf-8" />			<!-- MAIN CSS -->
 	<link rel="stylesheet" media="screen,projection" href="http://anky3.github.com/c-decoded/style/ui.totop.css" />	<!-- scroll to top button -->
+	<link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/balloontip_sm.css" />			<!-- BALLOON TOOLTIP CSS -->
 	<link rel="stylesheet" type="text/css" href="http://anky3.github.com/c-decoded/style/balloontip.css" />			<!-- BALLOON TOOLTIP CSS -->
 	<script type="text/javascript" src="http://anky3.github.com/c-decoded/script/balloontip.js"></script>			<!-- BALLOON TOOLTIP JS -->
 	<link rel="stylesheet" href="http://anky3.github.com/c-decoded/style/shThemeDefault.css" type="text/css" charset="utf-8" />			<!-- CODE BLOCK CSS -->
@@ -23,6 +24,9 @@
 	<div class="b-top"></div>
 	<div class="head">
 	<a href="http://cdecoded.ftp.sh" target="_top" class="head-logo"><h1 class="head-logo"><span style="font-size:68px;">C</span>&nbsp;decoded!</h1></a>
+	<a href="#" target="_top" rel="gp" class="sm2"><img src="img/gp.png" class="sm2" style="margin-right:20px;" /></a>
+	<a href="#" target="_top" rel="twt" class="sm"><img src="img/twt.png" class="sm" style="margin-right:10px;" /></a>
+	<a href="#" target="_top" rel="fb" class="sm"><img src="img/fb.png" class="sm" style="margin-right:10px;" /></a>
 	</div>
 	<div class="h-top"></div>
 	<div class="menu">
@@ -49,17 +53,14 @@
 </div>
 </center>
 	<!--Balloon tooltip-->
-	<div id="balloon1" class="balloonstyle">
-		This program is known as a <i>source code</i> or a <i>source program</i>. The extension of the executable C program is .c
+	<div id="fb" class="balloon_sm" style="width:60px; text-align:center;">
+		 Share&nbsp;on&nbsp;Facebook
 	</div>
-	<div id="balloon2" class="balloonstyle">
-		A C compiler consists of two different programs, namely, a preprocessor and a translator. The preprocessor removes all the preprocessor directive statements from the source code and prepares the source code for translation. The translator the converts the source code into a machine language code, and vice versa. The machine language code is known as an object code or an object program. The extension of the object code is .obj
+	<div id="twt" class="balloon_sm2" style="width:60px; text-align:center;">
+		 Tweet&nbsp;this!
 	</div>
-	<div id="balloon3" class="balloonstyle" >
-		The extension of executable code is .exe
-	</div>
-	<div id="balloon4" class="balloonstyle" >
-		The linker is needed in C as most of the operations that we perform in C have been provided as inbuilt functions.
+	<div id="gp" class="balloon_sm3" style="width:60px; text-align:center;">
+		 Share&nbsp;on&nbsp;Google&nbsp;Plus
 	</div>
 	<!-- jquery -->	
 	<script src="http://anky3.github.com/c-decoded/script/jquery-1.7.2.min.js" type="text/javascript"></script>
