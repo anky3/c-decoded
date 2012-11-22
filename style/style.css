@@ -38,6 +38,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'BloklettersBalpen';
+    src: url('font/Blokletters-Balpen-webfont.eot');
+    src: url('font/Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Blokletters-Balpen-webfont.woff') format('woff'),
+         url('font/Blokletters-Balpen-webfont.ttf') format('truetype'),
+         url('font/Blokletters-Balpen-webfont.svg#BloklettersBalpen') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 span.cd{
 	font-family:monospace;
 	color:rgb(0,0,160);
@@ -84,12 +94,7 @@ span.cd{
     } 
 body{
 	margin:0;
-	padding:0;  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+	padding:0;  background: #28343b url(../img/pat2.png);
 	}
 .b-top{
 	margin:0;
@@ -104,10 +109,42 @@ body{
 	background:white url(http://anky3.github.com/c-decoded/img/noise.png);
 	overflow:hidden;
 	}
+a.sm{
+	opacity:0.85;
+	margin-top:60px;
+	margin-right:10px;
+	float:right;
+	width:30px;
+	height:31px;
+	}
+a.sm:hover {
+	opacity:1;
+	margin-top:56px;
+	}
+a.sm:visited {
+	opacity:0.86;
+	margin-top:60px;
+	}
+a.sm2{
+	opacity:0.85;
+	margin-top:60px;
+	margin-right:20px;
+	float:right;
+	width:30px;
+	height:31px;
+	}
+a.sm2:hover {
+	opacity:1;
+	margin-top:56px;
+	}
+a.sm2:visited {
+	opacity:0.86;
+	margin-top:60px;
+	}
 .head{
 	margin:0;
 	padding:0;
-	background:#E70073;
+	background:#F00078 url(../img/pat7.png);
 	height:100px;
 	text-align:left;
 	width:100%;
@@ -178,10 +215,10 @@ hr.ft{
 	margin-left:auto;	
 	}
 .footer p{
-	font-family:'Myriad pro', sans-serif;
+	font-family:'Tahoma', sans-serif;
 	color:#000;
-	
-	font-size:14px;
+	text-shadow: 1px 1px 4px #6D6D6D;
+	font-size:11px;
 	text-align:right;
 	padding:4px 12px 4px;
 	margin:0;
@@ -200,7 +237,7 @@ h1.head-logo{
 	font-family: 'akashi', sans-serif;
 	font-size:48px;
 	color:white;
-	text-shadow: 1px 1px #d5d2d2;
+	text-shadow: 2px 2px 3px #d5d2d2;
 	text-decoration:none;
 	cursor:pointer;
 	}
@@ -212,10 +249,17 @@ p.tl{
 	font-family: 'Vera-Bold', sans-serif;
 	font-size:16px;
 	color:#444444;
-	background:#BABABA;
-	border-color:#fff;
-	border-top:double #fff;
-	border-bottom:double #fff;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #CACACA;
+	border-radius: 2px;
+	box-shadow: 3px 3px 8px #E4E4E4;
 	}
 p.para{
 	margin:24px 0 20px;
@@ -249,6 +293,51 @@ p.output{
 	font-weight:bold;
 	text-align:left;
 	color:#c0c0c0;
+	}
+.balloon_sm{
+	position:absolute;
+	margin:-80px -130px 0 ;
+	padding: 5px;
+	visibility: hidden;
+	color:white;
+	font:normal 22px 'BloklettersBalpen', sans-serif;
+	line-height: 18px;
+	z-index: 100;
+	text-align:right;
+	width:100%;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135,Strength=5);
+	}
+.balloon_sm img, .balloon_sm2 img, .balloon_sm3 img{
+display:hidden;
+	}
+.balloon_sm2{
+	position:absolute;
+	margin:-80px -70px 0 ;
+	padding: 5px;
+	visibility: hidden;
+	color:white;
+	font:normal 22px 'BloklettersBalpen', sans-serif;
+	line-height: 18px;
+	z-index: 100;
+	text-align:right;
+	width:100%;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135,Strength=5);
+	}
+.balloon_sm3{
+	position:absolute;
+	margin:-80px -240px 0 ;
+	padding: 5px;
+	visibility: hidden;
+	color:white;
+	font:normal 22px 'BloklettersBalpen', sans-serif;
+	line-height: 18px;
+	z-index: 100;
+	text-align:right;
+	width:100%;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135,Strength=5);
 	}
 .tip, .tip a:link, .tip a:active, .tip a:visited{
 	font-family: 'Amaranth-webfont', sans-serif;
