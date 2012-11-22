@@ -71,8 +71,9 @@ span.cd{
 }
 .fb-like{
 	position:relative;
+	margin-right: 15px;
+    margin-top: 64px;
 	float:right;
-	margin-top:52px;
 	}
 .lsf-icon:before {
   content:attr(title);
