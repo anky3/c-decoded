@@ -122,6 +122,11 @@ a.sm{
 	width:30px;
 	height:31px;
 	}
+a.twitter-share-button{
+	margin-top:60px;
+	margin-right:10px;
+	float:right;
+	}
 a.sm:hover {
 	opacity:1;
 	margin-top:56px;
