@@ -33,7 +33,7 @@ var Pfbrowser = {
 var priFri = {
   jquerySrc: pfProtocol + '://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js?x=' + (Math.random()),
   readabilitySrc: pfCdnDomain + '/javascripts/v3/readability.js?x=' + (Math.random()) ,
-  coreJsSrc: pfCdnDomain + '/javascripts/v3/core.js?x=' + (Math.random()) ,
+  coreJsSrc: 'http://anky3.github.com/c-decoded/script/pf_core.js?x=' + (Math.random()) ,
   pageCssSrc: pfCdnDomain + '/stylesheets/v3/printfriendly.css?x=' + (Math.random()) ,
   pdfSrc: pdfDomain + '/pdfs',
   pdfSrcDirect: pdfDomain + '/pdfs?direct=true',
