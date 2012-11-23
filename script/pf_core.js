@@ -1019,10 +1019,10 @@ sanitizeAndDisplay = function(d) {
   if(_window.pfProtocol == 'https' || _jquery.inArray(pf.domain,adFreeDomains) != -1) {
     pf.removeads = true;
   } else {
-     var adPage = _window.pfCdnDomain + '/ads.html';
+     var adPage;
      _jquery.each(adPartnerDomains, function(k,domain) {
        if(pf.domain.indexOf(domain) != -1) {
-         adPage = _window.pfCdnDomain + '/ads/' +  domain + '.html';
+         adPage;
          return false;
        }
      });
