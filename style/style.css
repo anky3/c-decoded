@@ -116,6 +116,9 @@ body{
 	float: left;
     margin: 0 32px 0 0;
 	}
+.printfriendly{
+	float: left;
+	}
 .twitter-share-button{
 	float: left;
     text-align: center;
@@ -125,9 +128,8 @@ body{
     height: 28px;
     margin-right: 32px;
     margin-top: 72px;
-    overflow: hidden;
     padding: 0;
-    width: 268px;
+    width: 450px;
 	}
 a.gp{
 	float: left;
