@@ -296,7 +296,7 @@ wrapperBody = function(){
               '<span class="localize" id="pf-pdf">PDF</span></a></li>',
               '<li id="w-email"><a href="#">',
               '<div class="pf-sprite"></div>',
-              '<span class="localize pf-email" id="pf-email" onclick="pfEmail.init()">Email</span></a></li>',
+              '<span class="localize pf-email" id="pf-email">Email</span></a></li>',
               '</ul>',
               '<div class="pf-options">',
                 '<ul class="pf-options">',
@@ -326,9 +326,6 @@ wrapperBody = function(){
              createPdfDialogBody(),
              '</div>',
 //              chromeExtensionMessage(),
-             '<div id="pf-dialog-ads">',
-               '<br style="clear:both">',
-             '</div>',
               '<form id="pf-email-form" accept-charset="UTF-8" target="email" method="post" action="' + pf.emailSrc + '">',
                 '<input type="hidden" name="content" value="" >',
                 '<input name="iehack" type="hidden" value="&#9760;">',
@@ -1019,10 +1016,10 @@ sanitizeAndDisplay = function(d) {
   if(_window.pfProtocol == 'https' || _jquery.inArray(pf.domain,adFreeDomains) != -1) {
     pf.removeads = true;
   } else {
-     var adPage ='#';
+     var adPage = _window.pfCdnDomain + '/ads.html';
      _jquery.each(adPartnerDomains, function(k,domain) {
        if(pf.domain.indexOf(domain) != -1) {
-         adPage = '#';
+         adPage = _window.pfCdnDomain + '/ads/' +  domain + '.html';
          return false;
        }
      });
