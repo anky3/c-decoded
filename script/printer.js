@@ -43,7 +43,7 @@ var priFri = {
   deletedNodesCss: [],
   iDoc: null,
   height: 400,
-  removeads: false,
+  removeads: true,
   removeImages: false,
   domainCssSrc: null,
   domainJsSrc: null,
