@@ -1019,7 +1019,14 @@ sanitizeAndDisplay = function(d) {
   if(_window.pfProtocol == 'https' || _jquery.inArray(pf.domain,adFreeDomains) != -1) {
     pf.removeads = true;
   } else {
-     _jquery('body',_document).append('<iframe frameborder="0"  name="gaiframe" id="gaiframe" src="'+ adPage + '" style="position:absolute!important; top:296px!important; left:50%!important; height:255px!important; width:636px!important; margin-left:-312px!important; z-index: 2147483647; display:none;"></iframe>');
+     var adPage = _window.pfCdnDomain + '/ads.html';
+     _jquery.each(adPartnerDomains, function(k,domain) {
+       if(pf.domain.indexOf(domain) != -1) {
+         adPage = _window.pfCdnDomain + '/ads/' +  domain + '.html';
+         return false;
+       }
+     });
+    _jquery('body',_document).append('<iframe frameborder="0"  name="gaiframe" id="gaiframe" src="'+ adPage + '" style="position:absolute!important; top:296px!important; left:50%!important; height:255px!important; width:636px!important; margin-left:-312px!important; z-index: 2147483647; display:none;"></iframe>');
   }
 
   _jquery.each(specialDomains, function(k,domain) {
