@@ -296,7 +296,7 @@ wrapperBody = function(){
               '<span class="localize" id="pf-pdf">PDF</span></a></li>',
               '<li id="w-email"><a href="#">',
               '<div class="pf-sprite"></div>',
-              '<span class="localize pf-email" id="pf-email">Email</span></a></li>',
+              '<span class="localize pf-email" id="pf-email" onclick="pfEmail.init()">Email</span></a></li>',
               '</ul>',
               '<div class="pf-options">',
                 '<ul class="pf-options">',
@@ -1019,10 +1019,7 @@ sanitizeAndDisplay = function(d) {
   if(_window.pfProtocol == 'https' || _jquery.inArray(pf.domain,adFreeDomains) != -1) {
     pf.removeads = true;
   } else {
-     var adPage = _window.pfCdnDomain + '/ads.html';
-     _jquery.each(adPartnerDomains, function(k,domain) {
-       if(pf.domain.indexOf(domain) != -1) {
-         adPage = _window.pfCdnDomain + '/ads/' +  domain + '.html';
+     
          return false;
        }
      });
