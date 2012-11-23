@@ -110,7 +110,11 @@ body{
 	}
 .fb-like{
 	float: left;
-    margin: 1px 32px 0 0;
+    margin: 0 32px 0 0;
+	}
+.mail{
+	float: left;
+    margin: 0 32px 0 0;
 	}
 .twitter-share-button{
 	float: left;
@@ -130,6 +134,7 @@ a.gp{
     overflow: hidden;
     text-align: center;
     width: 50px;
+    margin: 0 32px 0 0;
 	}
 .head{
 	margin:0;
