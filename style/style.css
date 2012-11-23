@@ -69,12 +69,6 @@ span.cd{
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
-.fb-like{
-	position:relative;
-	margin-right: 15px;
-    margin-top: 64px;
-	float:right;
-	}
 .lsf-icon:before {
   content:attr(title);
   margin-right:0.8em;
@@ -114,27 +108,28 @@ body{
 	background:white url(http://anky3.github.com/c-decoded/img/noise.png);
 	overflow:hidden;
 	}
-a.fb{
-	
-	text-align:center;
+.fb-like{
+	float: left;
+    margin: 1px 20px 0 0;
 	}
 .twitter-share-button{
-	text-align:center;
+	float: left;
+    text-align: center;
 	}
 .sm{
-	margin-top:60px;
-	margin-right:20px;
-	float:right;
-	
-	}
-.sm table tr{
-	width:65px;
-	height:32px;
+    float: right;
+    height: 28px;
+    margin-right: 32px;
+    margin-top: 72px;
+    overflow: hidden;
+    padding: 0;
+    width: 268px;
 	}
 a.gp{
-	text-align:center;
-	width:52px;
-	overflow:hidden;
+	float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 50px;
 	}
 .head{
 	margin:0;
