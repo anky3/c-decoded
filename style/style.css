@@ -114,42 +114,27 @@ body{
 	background:white url(http://anky3.github.com/c-decoded/img/noise.png);
 	overflow:hidden;
 	}
-a.sm{
-	opacity:0.85;
-	margin-top:60px;
-	margin-right:10px;
-	float:right;
-	width:30px;
-	height:31px;
+a.fb{
+	
+	text-align:center;
 	}
 .twitter-share-button{
-	margin-top:60px;
-	margin-right:10px;
-	float:right;
+	text-align:center;
 	}
-a.sm:hover {
-	opacity:1;
-	margin-top:56px;
-	}
-a.sm:visited {
-	opacity:0.86;
-	margin-top:60px;
-	}
-a.sm2{
-	opacity:0.85;
+.sm{
 	margin-top:60px;
 	margin-right:20px;
 	float:right;
-	width:30px;
-	height:31px;
+	
 	}
-a.sm2:hover {
-	opacity:1;
-	margin-top:56px;
+.sm table tr{
+	width:65px;
+	height:32px;
 	}
-a.sm2:visited {
-	opacity:0.86;
-	margin-top:60px;
+a.gp{
+	text-align:center;
+	width:52px;
+	overflow:hidden;
 	}
 .head{
 	margin:0;
