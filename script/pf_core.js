@@ -290,7 +290,7 @@ wrapperBody = function(){
             '<ul>',
               '<li id="w-print"><a href="#">',
               '<div class="pf-sprite"></div>',
-              '<span class="localize" id="pf-print">Print</span></a></li>',
+              '<span class="localize" id="pf-print" onClick="window.print()">Print</span></a></li>',
               '<li id="w-pdf"><a href="#">',
               '<div class="pf-sprite"></div>',
               '<span class="localize" id="pf-pdf">PDF</span></a></li>',
