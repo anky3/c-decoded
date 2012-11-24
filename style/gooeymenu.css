@@ -21,17 +21,30 @@ position:relative;
 text-align: center; /*set value to "left", "center", or "right"*/
 border-bottom:5px solid #56E700;
 padding-bottom: 7px;
+width: 106%;
 }
 
 ul.underlinemenu li{
+text-align: center; 
 display: inline;
+padding: 4px;
+margin-right: 50px; /*spacing between each menu link*/
+}
+ul.underlinemenu li:hover{
+background:#0073E7;
+	border-radius: 1px 6px 1px 10px;
 }
 
 ul.underlinemenu li a{
-font: bold 14px Arial, Verdana, sans-serif;
+text-align: center; 
+font: bold 15px Arial, Verdana, sans-serif;
 color: black;
-padding: 8px 8px 8px 0;
-margin-right: 50px; /*spacing between each menu link*/
+padding: 8px 0 8px 0;
+text-decoration: none;
+}
+ul.underlinemenu li a:hover{
+
+color:#f0f9ff;
 text-decoration: none;
 }
 
@@ -39,9 +52,12 @@ text-decoration: none;
 ul.underlinemenu li.active{ /*style of LI that gets dynamically added to menu to create background effect*/
 position:absolute;
 width:0;
+background:none;
 cursor:pointer;
 z-Index:1;
-height:-5px;
+padding:0;
+height:0px;
 margin-top:32px;
+border-radius:0;
 border-bottom:6px solid #FF5CC6;
 }

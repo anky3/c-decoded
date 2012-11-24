@@ -20,7 +20,7 @@ var gooeymenu={
 		jQuery(function($){ //on document.ready
 			function snapback(dur){
 				if ($selectedlink.length>0)
-					$effectref.dequeue().animate({left:$selectedlink.position().left, width:$selectedlink.outerWidth()-8}, dur, setting.fx)
+					$effectref.dequeue().animate({left:$selectedlink.position().left-4, width:$selectedlink.outerWidth()+8}, dur, setting.fx)
 			}
 			var setting=jQuery.extend({fx:'easeOutBack', fxtime:500, snapdelay:300}, usersetting)
 			var $menu=$('#'+setting.id).find('li:eq(0)').parents('ul:eq(0)') //select main menu UL
@@ -39,7 +39,7 @@ var gooeymenu={
 				var $target=$(this)
 //alert($target.position().left+" "+$target.get(0).offsetLeft)
 
-				$effectref.dequeue().animate({left:$target.position().left, width:$target.outerWidth()-8}, setting.fxtime, setting.fx)
+				$effectref.dequeue().animate({left:$target.position().left-4, width:$target.outerWidth()+8}, setting.fxtime, setting.fx)
 				if (setting.defaultselectedBool==0) //if there is no default selected menu item
 					$selectedlink=$target //set current mouseover element to selected element
 			})
